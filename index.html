@@ -11,23 +11,356 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
   </head>
-  <body>
-    <div class="mx-auto bg-custom-bg pt-[15px] pb-[30px]">
-      <div
-        class="max-w-[880px] mx-auto bg-custom-white p-[50px] rounded-[10px]"
-      >
-        <div class="flex justify-between items-center">
-          <img
-            class="h-[50px] text-[#666]"
-            src="/assets/images/img/logo.svg"
-            alt="logo"
-          />
-          <span class="uppercase text-[#111] text-[50px] font-inter"
-            >INVOICE</span
+  <body class="bg-custom-bg w-full">
+    <div
+      class="pt-[30px] pb-[30px] max-w-[880px] lg:mx-auto mx-[20px]"
+      id="invoice"
+    >
+      <div class="lg:flex">
+        <div
+          class="mx-auto lg:p-[50px] px-[20px] py-[30px] rounded-[10px] bg-custom-white"
+        >
+          <div
+            class="lg:flex md:flex lg:flex-row md:flex-row sm:flex-col lg:justify-between lg:items-center md:justify-between md:items-center sm:justify-start sm:items-start mb-[20px]"
           >
+            <img
+              class="h-[50px] text-[#666]"
+              src="/assets/images/img/logo.svg"
+              alt="logo"
+            />
+            <span
+              class="uppercase text-custom-black text-[50px] sm:text-[30px] font-inter"
+              >INVOICE</span
+            >
+          </div>
+          <div
+            class="flex lg:flex-row md:flex-row justify-between lg:items-center sm:flex-col-reverse lg:gap-[20px] md:gap-[20px] sm:gap-[5px]"
+          >
+            <div
+              class="lg:min-h-[18px] md:min-h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 sm:w-full bg-custom-bg"
+            ></div>
+            <div
+              class="gap-[20px] text-[14px] font-inter flex lg:items-center sm:items-start"
+            >
+              <p>
+                Invoice No:
+                <b class="text-custom-black font-bold">#LL93784</b>
+              </p>
+              <p>
+                Date:
+                <b class="text-custom-black font-bold">01.07.2022</b>
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-[20px] lg:flex justify-between items-center font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] sm:mb-[14px]"
+          >
+            <div class="sm:mb-[14px]">
+              <p>
+                <b class="text-custom-black font-bold mb-[2px]">
+                  Invoice To:
+                </b>
+              </p>
+              <p class="text-[#666]">
+                Lowell H. Dominguez
+                <br />
+                84 Spilman Street, London
+                <br />
+                United Kingdom
+                <br />lowell@gmail.com
+              </p>
+            </div>
+            <div class="lg:text-right">
+              <p>
+                <b class="text-custom-black font-bold mb-[2px]">Pay To:</b>
+              </p>
+              <p class="text-[#666]">
+                Laralink Ltd
+                <br />
+                86-90 Paul Street, London
+                <br />
+                England EC2A 4NE
+                <br />demo@gmail.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-[6px] border-[1px] border-[#dbdfea] overflow-hidden"
+          >
+            <div class="w-full overflow-auto">
+              <table class="font-inter w-[800px]">
+                <thead class="bg-custom-bg">
+                  <tr class="">
+                    <th
+                      class="text-custom-black font-semibold px-[15px] py-[10px] text-left w-[25%]"
+                    >
+                      Item
+                    </th>
+                    <th
+                      class="w-[33.33%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                    >
+                      Description
+                    </th>
+                    <th
+                      class="w-[16%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                    >
+                      Price
+                    </th>
+                    <th
+                      class="w-[8%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                    >
+                      Qty
+                    </th>
+                    <th
+                      class="w-[16%] text-custom-black font-semibold px-[15px] py-[10px] text-end"
+                    >
+                      Total
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="text-[14px]">
+                  <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                    <td class="w-[25%] px-[15px] py-[10px]">
+                      1. Website Design
+                    </td>
+                    <td class="w-[33.33%] px-[15px] py-[10px]">
+                      Six web page designs and three times revision
+                    </td>
+                    <td class="w-[16%] px-[15px] py-[10px]">$350</td>
+                    <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                    <td class="w-[16%] px-[15px] py-[10px] text-end">$350</td>
+                  </tr>
+                  <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                    <td class="w-[25%] px-[15px] py-[10px]">
+                      2. Web Development
+                    </td>
+                    <td class="w-[33.33%] px-[15px] py-[10px]">
+                      Convert pixel-perfect frontend and make it dynamic
+                    </td>
+                    <td class="w-[16%] px-[15px] py-[10px]">$600</td>
+                    <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                    <td class="w-[16%] px-[15px] py-[10px] text-end">$600</td>
+                  </tr>
+                  <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                    <td class="w-[25%] px-[15px] py-[10px]">
+                      3. App Development
+                    </td>
+                    <td class="w-[33.33%] px-[15px] py-[10px]">
+                      Android & Ios Application Development
+                    </td>
+                    <td class="w-[16%] px-[15px] py-[10px]">$200</td>
+                    <td class="w-[8%] px-[15px] py-[10px]">2</td>
+                    <td class="w-[16%] px-[15px] py-[10px] text-end">$400</td>
+                  </tr>
+                  <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                    <td class="w-[25%] px-[15px] py-[10px]">
+                      4. Digital Marketing
+                    </td>
+                    <td class="w-[33.33%] px-[15px] py-[10px]">
+                      Facebook, Youtube and Google Marketing
+                    </td>
+                    <td class="w-[16%] px-[15px] py-[10px]">$100</td>
+                    <td class="w-[8%] px-[15px] py-[10px]">3</td>
+                    <td class="w-[16%] px-[15px] py-[10px] text-end">$300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- footer section  -->
+          <div
+            class="w-full flex lg:flex-row md:flex-row sm:flex-col-reverse lg:justify-between leading-normal px-[10px] py-[15px] font-inter mb-[30px] gap-[15px]"
+          >
+            <!-- left side  -->
+            <div class="w-[58%] text-[14px]">
+              <p class="mb-[2px]">
+                <b class="text-custom-black font-bold">Payment info:</b>
+              </p>
+              <p class="text-[#666] text-[14px]">
+                Credit Card - 236***********928 <br />Amount: $1732
+              </p>
+            </div>
+            <!-- right side  -->
+            <div class="text-[14px] w-[42%] text-right">
+              <table class="mt-[-1px]">
+                <tbody class="">
+                  <tr class="font-bold text-custom-black text-left">
+                    <td class="w-[25%] px-[15px] pb-[10px]">Subtoal</td>
+                    <td class="w-[25%] text-right px-[15px]">$1650</td>
+                  </tr>
+                  <tr class="">
+                    <td
+                      class="text-[14px] text-custom-black text-left px-[15px] pb-[10px]"
+                    >
+                      Tax <span class="text-[#b5b5b5]">(5%)</span>
+                    </td>
+                    <td class="text-right leading-normal px-[15px]">+$82</td>
+                  </tr>
+                  <tr
+                    class="border-y border-[#dbdfea] text-custom-black font-bold text-[16px]"
+                  >
+                    <td class="text-left px-[15px] py-[10px]">Grand Total</td>
+                    <td class="px-[15px] py-[10px]">$1732</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- note section  -->
+
+          <div
+            class="py-[15px] px-[20px] border-[1px] overflow-hidden border-[#dbdfea] rounded-md font-inter"
+          >
+            <p class="mb-[5px] leading-normal">
+              <b class="text-custom-black font-bold text-[14px]">
+                Terms & Conditions:
+              </b>
+            </p>
+            <ul class="list-disc pl-6 text-[#666] text-[14px]">
+              <li class="mb-[5px] leading-normal">
+                All claims relating to quantity or shipping errors shall be
+                waived by Buyer unless made in writing to Seller within thirty
+                (30) days after delivery of goods to the address stated.
+              </li>
+              <li class="mb-[5px] leading-normal">
+                Delivery dates are not guaranteed and Seller has no liability
+                for damages that may be incurred due to any delay in shipment of
+                goods hereunder. Taxes are excluded unless otherwise stated.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="lg:ml-[20px] rounded-md bg-custom-white p-[5px] lg:h-[100px] print:hidden lg:mt-0 lg:flex-col md:mt-[20px] flex justify-center lg:w-[84px] w-[250px] mx-auto md:items-center sm:mt-[30px]"
+        >
+          <div class="relative w-full">
+            <a
+              href="javascript:window.print()"
+              class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 relative group"
+            >
+              <span
+                class="lg:w-[42px] lg:px-0 md:px-[15px] w-full h-[42px] text-[#007aff] bg-[#007AFF1A] lg:rounded-t-md flex justify-center items-center rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <rect
+                    x="128"
+                    y="240"
+                    width="256"
+                    height="208"
+                    rx="24.32"
+                    ry="24.32"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></rect>
+                  <path
+                    d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <circle cx="392" cy="184" r="24" fill="currentColor"></circle>
+                </svg>
+                <span
+                  class="lg:hidden ml-[8px] font-inter font-bold flex items-center justify-center"
+                  >print</span
+                >
+              </span>
+
+              <p
+                class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
+              >
+                <span class="truncate">Print</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+          </div>
+          <div class="relative w-full lg:mt-[4px] ml-[3px] lg:ml-0">
+            <a
+              href="javascript:void(0)"
+              id="downloadPdfButton"
+              class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 relative group"
+            >
+              <span
+                class="lg:w-[42px] md:px-[15px] lg:px-0 h-[42px] text-[#34c759] bg-[#34c7591a] lg:rounded-b-md rounded-md flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  ></path>
+                </svg>
+                <span class="lg:hidden ml-[8px] font-inter font-bold"
+                  >Download</span
+                >
+              </span>
+              <p
+                class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
+              >
+                <span class="truncate">Download</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("downloadPdfButton")
+          .addEventListener("click", function () {
+            // Select the HTML element containing the invoice
+            const invoiceElement = document.getElementById("invoice");
+
+            // Convert the HTML element to a PDF
+            html2pdf().from(invoiceElement).save();
+          });
+      });
+    </script>
   </body>
 </html>
