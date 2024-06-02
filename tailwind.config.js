@@ -4,12 +4,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{html,js}", "./*.html"],
   theme: {
+    screens: {
+      sm: "200px",
+      md: "500px",
+      lg: "1000px",
+    },
     extend: {
-      screens: {
-        sm: "200px", // Small screen size
-        md: "768px", // Medium screen size
-        lg: "1024px", // Large screen size
-      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

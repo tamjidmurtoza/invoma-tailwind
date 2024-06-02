@@ -16,55 +16,56 @@
   </head>
   <body class="bg-custom-bg w-full">
     <div
-      class="pt-[30px] pb-[30px] max-w-[880px] lg:mx-auto mx-[20px]"
-      id="invoice"
+      class="pt-[30px] pb-[30px] lg:px-[15px] max-w-[880px] lg:mx-auto mx-[20px]"
     >
-      <div class="lg:flex">
+      <div class="relative">
         <div
+          id="invoice"
           class="mx-auto lg:p-[50px] px-[20px] py-[30px] rounded-[10px] bg-custom-white"
         >
           <div
-            class="lg:flex md:flex lg:flex-row md:flex-row sm:flex-col lg:justify-between lg:items-center md:justify-between md:items-center sm:justify-start sm:items-start mb-[20px]"
+            class="lg:flex md:flex lg:flex-row md:flex-row sm:flex-col lg:justify-between lg:items-center md:justify-between md:items-center sm:justify-start sm:items-start mb-[20px] lg:h-[50px]"
           >
             <img
-              class="h-[50px] text-[#666]"
+              class="text-[#666] w-[65px]"
               src="/assets/images/img/logo.svg"
               alt="logo"
             />
             <span
-              class="uppercase text-custom-black text-[50px] sm:text-[30px] font-inter"
+              class="uppercase text-custom-black lg:text-[50px] md:text-[50px] sm:text-[30px] font-inter lg:mt-0 md:mt-0 sm:mt-[10px]"
               >INVOICE</span
             >
           </div>
           <div
-            class="flex lg:flex-row md:flex-row justify-between lg:items-center sm:flex-col-reverse lg:gap-[20px] md:gap-[20px] sm:gap-[5px]"
+            class="flex lg:flex-row md:flex-row justify-between lg:items-center lg:gap-[20px] md:gap-[20px] sm:gap-[5px] sm:flex-col-reverse"
           >
             <div
-              class="lg:min-h-[18px] md:min-h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 sm:w-full bg-custom-bg"
+              class="lg:min-h-[18px] md:min-h-[18px] sm:min-h-[5px] rounded-[25.6px] lg:flex-1 sm:w-full bg-custom-bg"
             ></div>
             <div
               class="gap-[20px] text-[14px] font-inter flex lg:items-center sm:items-start"
             >
-              <p>
+              <p class="text-[#666]">
                 Invoice No:
                 <b class="text-custom-black font-bold">#LL93784</b>
               </p>
-              <p>
+              <p class="text-[#666]">
                 Date:
                 <b class="text-custom-black font-bold">01.07.2022</b>
               </p>
             </div>
           </div>
+
           <div
-            class="mt-[20px] lg:flex justify-between items-center font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] sm:mb-[14px]"
+            class="mt-[20px] flex lg:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] sm:mb-[14px] leading-[1.5em] md:flex-row"
           >
             <div class="sm:mb-[14px]">
               <p>
-                <b class="text-custom-black font-bold mb-[2px]">
+                <b class="text-custom-black font-bold mb-[2px] leading-[1.5em]">
                   Invoice To:
                 </b>
               </p>
-              <p class="text-[#666]">
+              <p class="text-[#666] leading-[1.5em]">
                 Lowell H. Dominguez
                 <br />
                 84 Spilman Street, London
@@ -73,11 +74,13 @@
                 <br />lowell@gmail.com
               </p>
             </div>
-            <div class="lg:text-right">
+            <div class="lg:text-right md:text-right">
               <p>
-                <b class="text-custom-black font-bold mb-[2px]">Pay To:</b>
+                <b class="text-custom-black font-bold mb-[2px] leading-[1.5em]"
+                  >Pay To:</b
+                >
               </p>
-              <p class="text-[#666]">
+              <p class="text-[#666] leading-[1.5em]">
                 Laralink Ltd
                 <br />
                 86-90 Paul Street, London
@@ -91,8 +94,8 @@
             class="rounded-[6px] border-[1px] border-[#dbdfea] overflow-hidden"
           >
             <div class="w-full overflow-auto">
-              <table class="font-inter w-[800px]">
-                <thead class="bg-custom-bg">
+              <table class="font-inter">
+                <thead class="bg-custom-bg text-[14px]">
                   <tr class="">
                     <th
                       class="text-custom-black font-semibold px-[15px] py-[10px] text-left w-[25%]"
@@ -235,116 +238,113 @@
         </div>
 
         <div
-          class="lg:ml-[20px] rounded-md bg-custom-white p-[5px] lg:h-[100px] print:hidden lg:mt-0 lg:flex-col md:mt-[20px] flex justify-center lg:w-[84px] w-[250px] mx-auto md:items-center sm:mt-[30px]"
+          class="flex flex-col gap-[3px] justify-end items-end absolute translate-x-[100%] -right-[20px] top-0 border-[3px] border-white rounded-md"
         >
-          <div class="relative w-full">
-            <a
-              href="javascript:window.print()"
-              class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 relative group"
+          <a
+            href="javascript:window.print()"
+            class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 group bg-[#007AFF1A] rounded-t-[6px] overflow-hidden"
+          >
+            <span
+              class="lg:w-[42px] lg:px-0 md:px-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
             >
-              <span
-                class="lg:w-[42px] lg:px-0 md:px-[15px] w-full h-[42px] text-[#007aff] bg-[#007AFF1A] lg:rounded-t-md flex justify-center items-center rounded-md"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[24px]"
+                viewBox="0 0 512 512"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-[24px]"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linejoin="round"
-                    stroke-width="24"
-                  ></path>
-                  <rect
-                    x="128"
-                    y="240"
-                    width="256"
-                    height="208"
-                    rx="24.32"
-                    ry="24.32"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linejoin="round"
-                    stroke-width="24"
-                  ></rect>
-                  <path
-                    d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linejoin="round"
-                    stroke-width="24"
-                  ></path>
-                  <circle cx="392" cy="184" r="24" fill="currentColor"></circle>
-                </svg>
-                <span
-                  class="lg:hidden ml-[8px] font-inter font-bold flex items-center justify-center"
-                  >print</span
-                >
-              </span>
+                <path
+                  d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></path>
+                <rect
+                  x="128"
+                  y="240"
+                  width="256"
+                  height="208"
+                  rx="24.32"
+                  ry="24.32"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></rect>
+                <path
+                  d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="24"
+                ></path>
+                <circle cx="392" cy="184" r="24" fill="currentColor"></circle>
+              </svg>
+              <!-- <span
+              class="lg:hidden ml-[8px] font-inter font-bold flex items-center justify-center"
+              >print</span
+            > -->
+            </span>
 
-              <p
-                class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
-              >
-                <span class="truncate">Print</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
-                  ></path>
-                </svg>
-              </p>
-            </a>
-          </div>
-          <div class="relative w-full lg:mt-[4px] ml-[3px] lg:ml-0">
-            <a
-              href="javascript:void(0)"
-              id="downloadPdfButton"
-              class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 relative group"
+            <p
+              class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
             >
-              <span
-                class="lg:w-[42px] md:px-[15px] lg:px-0 h-[42px] text-[#34c759] bg-[#34c7591a] lg:rounded-b-md rounded-md flex justify-center items-center"
+              <span class="truncate">Print</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-[24px]"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="32"
-                  ></path>
-                </svg>
-                <span class="lg:hidden ml-[8px] font-inter font-bold"
-                  >Download</span
-                >
-              </span>
-              <p
-                class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
+                <path
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+            </p>
+          </a>
+          <a
+            href="javascript:window.print()"
+            class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 group bg-[#34c7591a] rounded-b-[6px] overflow-hidden"
+          >
+            <span
+              class="lg:w-[42px] lg:px-0 md:px-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[24px]"
+                viewBox="0 0 512 512"
               >
-                <span class="truncate">Download</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                <path
+                  d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"
+                  fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
-                  ></path>
-                </svg>
-              </p>
-            </a>
-          </div>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                ></path>
+              </svg>
+              <!-- <span
+            class="lg:hidden ml-[8px] font-inter font-bold flex items-center justify-center"
+            >print</span
+          > -->
+            </span>
+
+            <p
+              class="absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 bg-white rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 dark:bg-gray-800 dark:text-white opacity-0 invisible transition-opacity duration-200 group-hover:opacity-100 group-hover:visible"
+            >
+              <span class="truncate">Print</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+            </p>
+          </a>
         </div>
       </div>
     </div>
