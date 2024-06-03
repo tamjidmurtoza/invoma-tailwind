@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INVOICE</title>
+    <title>General Purpose Invoice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,33 +37,38 @@
             >
           </div>
           <div
-            class="flex lg:flex-row md:flex-row justify-between items-center"
+            class="flex lg:flex-row md:flex-row justify-between items-center h-[21px]"
           >
             <div
               class="lg:min-h-[18px] md:h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 bg-custom-bg md:items-center"
             ></div>
-            <div class="gap-[20px] text-[14px] font-inter flex ml-[20px]">
-              <p class="text-[#666] flex items-center gap-[5px]">
+            <div
+              class="text-[14px] font-inter flex ml-[20px] m-0 leading-[24px]"
+            >
+              <p
+                class="text-[#666] flex items-center leading-[1.5em] mr-[20px]"
+              >
                 Invoice No:
-                <b class="text-custom-black font-bold">#LL93784</b>
+                <b class="text-custom-black font-bold ml-[4px]">#LL93784</b>
               </p>
-              <p class="text-[#666] flex items-center gap-[5px]">
+
+              <p class="text-[#666] flex items-center">
                 Date:
-                <b class="text-custom-black font-bold">01.07.2022</b>
+                <b class="text-custom-black font-bold ml-[4px]">01.07.2022</b>
               </p>
             </div>
           </div>
 
           <div
-            class="mt-[20px] flex lg:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] sm:mb-[14px] leading-[1.5em] md:flex-row"
+            class="mt-[20px] flex lg:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] mb-[15px] leading-[1.5em] md:flex-row"
           >
-            <div class="sm:mb-[14px]">
-              <p>
+            <div class="">
+              <p class="mb-[2px]">
                 <b class="text-custom-black font-bold mb-[2px] leading-[1.5em]">
                   Invoice To:
                 </b>
               </p>
-              <p class="text-[#666] leading-[1.5em]">
+              <p class="text-[#666] leading-[21px] sm:mb-[14px]">
                 Lowell H. Dominguez
                 <br />
                 84 Spilman Street, London
@@ -73,12 +78,12 @@
               </p>
             </div>
             <div class="lg:text-right md:text-right">
-              <p>
-                <b class="text-custom-black font-bold mb-[2px] leading-[1.5em]"
+              <p class="mb-[2px]">
+                <b class="text-custom-black font-bold leading-[21px]"
                   >Pay To:</b
                 >
               </p>
-              <p class="text-[#666] leading-[1.5em]">
+              <p class="text-[#666] leading-[21px]">
                 Laralink Ltd
                 <br />
                 86-90 Paul Street, London
@@ -92,32 +97,34 @@
           <div
             class="rounded-[6px] border-[1px] border-[#dbdfea] overflow-hidden"
           >
-            <div class="lg:w-full">
+            <div class="lg:w-full leading-[21px]">
               <table class="font-inter w-full">
-                <thead class="bg-custom-bg text-[14px] print:bg-red-900">
+                <thead
+                  class="bg-custom-bg text-[14px] print:bg-red-900 h-[42.19px]"
+                >
                   <tr class="">
                     <th
-                      class="text-custom-black font-semibold px-[15px] py-[10px] text-left w-[25%]"
+                      class="text-custom-black font-semibold px-[15px] py-[10px] text-left w-[50px] leading-[21px] font-inter"
                     >
                       Item
                     </th>
                     <th
-                      class="w-[33.33%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                      class="w-[249.33px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                     >
                       Description
                     </th>
                     <th
-                      class="w-[16%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                      class="w-[124.66px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                     >
                       Price
                     </th>
                     <th
-                      class="w-[8%] text-custom-black font-semibold px-[15px] py-[10px] text-left"
+                      class="w-[62.33px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                     >
                       Qty
                     </th>
                     <th
-                      class="w-[16%] text-custom-black font-semibold px-[15px] py-[10px] text-end"
+                      class="w-[124,69px] text-custom-black font-semibold px-[15px] py-[10px] text-end leading-[21px]"
                     >
                       Total
                     </th>
@@ -186,22 +193,28 @@
               </p>
             </div>
             <!-- right side  -->
-            <div class="text-[14px] w-[42%] text-right py-[10px]">
+            <div class="text-[14px] w-[42%] text-right">
               <table class="mt-[-1px]">
                 <tbody class="">
                   <tr class="font-bold text-custom-black text-left">
-                    <td class="w-[25%] px-[15px] pb-[10px]">Subtoal</td>
-                    <td class="w-[25%] text-right px-[15px] pb-[10px]">
+                    <td class="w-[25%] px-[15px] pb-[10px] pt-[10px]">
+                      Subtoal
+                    </td>
+                    <td
+                      class="w-[25%] text-right px-[15px] pb-[10px] pt-[10px]"
+                    >
                       $1650
                     </td>
                   </tr>
                   <tr class="">
                     <td
-                      class="text-[14px] text-custom-black text-left px-[15px] pb-[10px]"
+                      class="text-[14px] text-custom-black text-left px-[15px] pb-[10px] h-[32.5px]"
                     >
                       Tax <span class="text-[#b5b5b5]">(5%)</span>
                     </td>
-                    <td class="text-right leading-normal px-[15px]">+$82</td>
+                    <td class="text-right leading-normal px-[15px] h-[32.5px]">
+                      +$82
+                    </td>
                   </tr>
                   <tr
                     class="border-y border-[#dbdfea] text-custom-black font-bold text-[16px]"
@@ -223,7 +236,7 @@
                 Terms & Conditions:
               </b>
             </p>
-            <ul class="list-disc pl-6 text-[#666] text-[14px]">
+            <ul class="list-disc pl-[20px] text-[#666] text-[14px]">
               <li class="mb-[5px] leading-normal">
                 All claims relating to quantity or shipping errors shall be
                 waived by Buyer unless made in writing to Seller within thirty
@@ -239,11 +252,11 @@
         </div>
 
         <div
-          class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto"
+          class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
         >
           <a
             href="javascript:window.print()"
-            class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center"
+            class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
           >
             <span
               class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
@@ -284,7 +297,7 @@
             </span>
 
             <p
-              class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] text-gray-600 rounded-[4px] shadow-lg left-[55px] top-2 dark:shadow-none shadow-gray-200 lg:dark:bg-gray-800 dark:text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+              class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
             >
               <span
                 class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
@@ -292,7 +305,7 @@
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="md:hidden lg:block absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -304,8 +317,8 @@
           </a>
 
           <a
-            href="javascript:window.print()"
-            class="text-gray-600 transition-colors duration-200 focus:outline-none dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center"
+            id="downloadPdfButton"
+            class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933]"
           >
             <span
               class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
@@ -324,13 +337,10 @@
                   stroke-width="32"
                 ></path>
               </svg>
-              <!-- <span
-          class="lg:hidden ml-[8px] font-inter font-bold flex items-center justify-center"
-        >print</span> -->
             </span>
 
             <p
-              class="lg:absolute h-[25px] flex items-center justify-center text-gray-600 rounded-[4px] shadow-lg left-[55px] bottom-[10px] dark:shadow-none shadow-gray-200 lg:dark:bg-gray-800 dark:text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none md:ml-[10px] mr-[10px]"
+              class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
             >
               <span
                 class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
@@ -338,7 +348,7 @@
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="md:hidden lg:block absolute w-[17px] h-[10px] text-white transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 dark:text-gray-800"
+                class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
