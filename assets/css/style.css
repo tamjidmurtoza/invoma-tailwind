@@ -572,8 +572,8 @@ video {
   bottom: 10px;
 }
 
-.left-\[55px\]{
-  left: 55px;
+.left-\[53px\]{
+  left: 53px;
 }
 
 .top-1\/2{
@@ -582,18 +582,6 @@ video {
 
 .top-2{
   top: 0.5rem;
-}
-
-.left-\[50px\]{
-  left: 50px;
-}
-
-.left-\[52px\]{
-  left: 52px;
-}
-
-.left-\[53px\]{
-  left: 53px;
 }
 
 .m-0{
@@ -608,6 +596,10 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-\[15px\]{
+  margin-bottom: 15px;
 }
 
 .mb-\[20px\]{
@@ -634,14 +626,6 @@ video {
   margin-left: 4px;
 }
 
-.ml-\[8px\]{
-  margin-left: 8px;
-}
-
-.mr-\[10px\]{
-  margin-right: 10px;
-}
-
 .mr-\[20px\]{
   margin-right: 20px;
 }
@@ -652,10 +636,6 @@ video {
 
 .mt-\[20px\]{
   margin-top: 20px;
-}
-
-.mb-\[15px\]{
-  margin-bottom: 15px;
 }
 
 .flex{
@@ -857,11 +837,6 @@ video {
   background-color: #34c7591a;
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-custom-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(245 246 250 / var(--tw-bg-opacity));
@@ -1034,14 +1009,6 @@ video {
   transition-duration: 200ms;
 }
 
-.hover\:bg-\[\#007AFF1A\]:hover{
-  background-color: #007AFF1A;
-}
-
-.hover\:bg-\[\#2e4d6f1a\]:hover{
-  background-color: #2e4d6f1a;
-}
-
 .hover\:bg-\[\#007AFF33\]:hover{
   background-color: #007AFF33;
 }
@@ -1116,20 +1083,8 @@ video {
     margin-bottom: 30px;
   }
 
-  .md\:ml-\[10px\]{
-    margin-left: 10px;
-  }
-
   .md\:mt-0{
     margin-top: 0px;
-  }
-
-  .md\:ml-\[5px\]{
-    margin-left: 5px;
-  }
-
-  .md\:ml-\[2px\]{
-    margin-left: 2px;
   }
 
   .md\:flex{
@@ -1230,11 +1185,6 @@ video {
     margin-right: auto;
   }
 
-  .lg\:mx-5{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
   .lg\:mb-\[10px\]{
     margin-bottom: 10px;
   }
@@ -1243,32 +1193,12 @@ video {
     margin-top: 0px;
   }
 
-  .lg\:mr-0{
-    margin-right: 0px;
-  }
-
-  .lg\:ml-0{
-    margin-left: 0px;
-  }
-
-  .lg\:ml-1{
-    margin-left: 0.25rem;
-  }
-
-  .lg\:ml-\[-1px\]{
-    margin-left: -1px;
-  }
-
   .lg\:block{
     display: block;
   }
 
   .lg\:flex{
     display: flex;
-  }
-
-  .lg\:hidden{
-    display: none;
   }
 
   .lg\:h-\[50px\]{
@@ -1366,16 +1296,6 @@ video {
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .lg\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:px-\[5px\]{
-    padding-left: 5px;
-    padding-right: 5px;
   }
 
   .lg\:text-right{

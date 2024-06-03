@@ -17,8 +17,28 @@ module.exports = {
         "custom-bg": "#f5f6fa",
         "custom-white": "#fff",
         "custom-black": "#111",
+        "print-red": "#ff0000",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".print-bg-custom-bg": {
+          "@media print": {
+            backgroundColor: "#f5f6fa !important",
+            "-webkit-print-color-adjust": "exact !important",
+          },
+        },
+        ".print-bg-red": {
+          "@media print": {
+            backgroundColor: "#ff0000 !important",
+            "-webkit-print-color-adjust": "exact !important",
+          },
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
