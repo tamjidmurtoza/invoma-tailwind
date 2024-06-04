@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>General Purpose Invoice</title>
+    <title>Invoice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,12 +14,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <style>
       @media print {
+        .print_absolute {
+          position: absolute;
+        }
         .my_print {
           background-color: #007aff !important;
           -webkit-print-color-adjust: exact !important;
         }
         .my_print_text {
-          background-color: #007aff !important;
+          color: #fff !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .print_text {
+          color: #fff !important;
           -webkit-print-color-adjust: exact !important;
         }
         .my_print_bg {
@@ -30,6 +37,10 @@
           background-color: #b5b5b5 !important;
           -webkit-print-color-adjust: exact !important;
         }
+        .print_bg_blue {
+          background-color: #007aff !important;
+          -webkit-print-color-adjust: exact !important;
+        }
       }
     </style>
   </head>
@@ -38,57 +49,51 @@
       <div
         class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
       >
-        <div class="relative pb-[30px]">
+        <div id="invoice" class="pb-[30px] relative">
           <div
-            id="invoice"
-            class="mx-auto lg:p-[50px] lg:mb-0 md:mb-[30px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
+            class="mx-auto overflow-hidden px-[50px] border-t-[40px] border-custom-blue lg:mb-0 rounded-[10px] bg-custom-white print:mx-0 print:px-[20px]"
           >
             <div
-              class="lg:flex border-b-[1px] pb-[15px] items-center mb-[20px] lg:mb-0 print:flex print:mb-0"
+              class="relative mt-0 leading-[22px] md:mb-[15px] lg:mb-0 print:mb-0 flex h-[101px] pt-[15px] pb-[15px]"
             >
               <div
-                class="w-[30%] mt-0 leading-[22px] md:mb-[15px] lg:mb-0 print:mb-0"
+                class="mt-0 leading-[22px] w-[30%] p-0 h-[60px] relative z-2"
               >
-                <div class="mt-0 leading-[22px]">
-                  <img src="/assets/images/img/general_logo2.svg" alt="logo" />
-                </div>
+                <img
+                  class="w-[78.98px] text-white"
+                  src="/assets/images/img/logo_white.svg"
+                  alt="logo"
+                />
               </div>
-
-              <div class="lg:w-[70%] leading-[22px]">
+              <div class="leading-[22px] w-[70%]">
                 <div
-                  class="grid grid-cols-3 gap-[20px] leading-[22px] gap-x-[20px] gap-y-[20px]"
+                  class="grid grid-cols-3 gap-x-[20px] gap-y-[10px] text-center"
                 >
-                  <div class="text-[14px] text-[#666] leading-[21px]">
-                    <b class="font-bold leading-[21px] text-custom-black"
-                      >Email</b
-                    >
-                    <br />
+                  <div
+                    class="w-[161.66px] h-[71px] text-custom-gray text-[14px] text-center leading-[22px]"
+                  >
+                    <p class="text-custom-blue leading-[22px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 512 512"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"
+                        ></path>
+                      </svg>
+                    </p>
                     support@gmail.com
                     <br />
-                    career@gmail.com
-                  </div>
-                  <div class="text-[14px] text-[#666] leading-[21px]">
-                    <b
-                      class="custom-black font-bold leading-[21px] text-custom-black"
-                      >Phone</b
-                    >
-                    <br />
-                    +99-131-124-567
-                    <br />
-                    Monday to Friday
-                  </div>
-                  <div class="text-[14px] text-[#666] leading-[21px]">
-                    <b
-                      class="custom-black font-bold leading-[21px] text-custom-black"
-                      >Address</b
-                    >
-                    <br />
-                    9 Paul Street, London
-                    <br />
-                    England EC2A 4NE
+                    jobs@gmail.com
                   </div>
                 </div>
               </div>
+              <div
+                class="absolute h-[101px] w-[42%] top-0 left-[-100px] bg-custom-blue leading-[22px] transform -skew-x-35"
+              ></div>
             </div>
 
             <div
@@ -112,7 +117,7 @@
                   United Kingdom.
                   <br />lowell@gmail.com
                   <br />
-                  +99-327-123-987
+                  +44(0) 327 123 987
                 </p>
               </div>
               <div class="flex flex-col lg:h-[143px]">
@@ -122,64 +127,71 @@
                   INVOICE
                 </div>
                 <div
-                  class="bg-[#007aff] py-[12px] px-[20px] rounded-[10px] grid grid-cols-3 gap-x-[20px] gap-y-[10px] justify-center lg:w-[525px] my_print"
+                  class="bg-[#f5f6fa] py-[12px] px-[20px] rounded-[10px] grid grid-cols-3 gap-x-[20px] gap-y-[10px] justify-center lg:w-[525px] border-[1px] my_print"
                 >
                   <div>
-                    <span class="leading-[21px] text-[14px] text-[#FFFFFF99]"
-                      >Grand Total:</span
+                    <span class="leading-[21px] text-[14px] text-custom-gray"
+                      >Invoice No:</span
                     >
                     <br />
-                    <b class="text-[#fff] text-[16px] font-bold leading-[21px]">
-                      $1732
+                    <b
+                      class="text-custom-blue text-[18px] font-bold leading-[21px]"
+                    >
+                      #LL93784
                     </b>
                   </div>
                   <div>
-                    <span class="leading-[21px] text-[14px] text-[#FFFFFF99]"
+                    <span class="leading-[21px] text-[14px] text-custom-gray"
                       >Invoice Date:</span
                     >
                     <br />
-                    <b class="text-[#fff] text-[16px] font-bold leading-[21px]">
+                    <b
+                      class="text-custom-blue text-[18px] font-bold leading-[21px]"
+                    >
                       10 March 2022
                     </b>
                   </div>
                   <div>
-                    <span class="leading-[21px] text-[14px] text-[#FFFFFF99]"
-                      >Invoice No:</span
+                    <span class="leading-[21px] text-[14px] text-custom-gray"
+                      >Grand Total:</span
                     >
                     <br />
-                    <b class="text-[#fff] text-[16px] font-bold leading-[21px]">
-                      #LL93784
+                    <b
+                      class="text-custom-blue text-[18px] font-bold leading-[21px]"
+                    >
+                      $1000
                     </b>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- table  -->
             <div
               class="rounded-[6px] border-[1px] border-[#dbdfea] overflow-hidden md:mt-[30px] lg:mt-0"
             >
               <div class="lg:w-full leading-[21px]">
                 <table class="font-inter w-full">
-                  <thead class="text-[14px] h-[42.19px]">
+                  <thead class="text-[14px] h-[42.19px] text-[#111]">
                     <tr class="">
                       <th
-                        class="text-[#007aff] font-semibold px-[15px] py-[10px] text-left w-[58.33333333%] leading-[21px] font-inter"
+                        class="font-semibold px-[15px] py-[10px] text-left w-[58.33333333%] leading-[21px] font-inter"
                       >
                         Item
                       </th>
 
                       <th
-                        class="w-[16.66666667%] text-[#007aff] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[16.66666667%] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Price
                       </th>
                       <th
-                        class="w-[8.33333333%] text-[#007aff] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[8.33333333%] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Qty
                       </th>
                       <th
-                        class="w-[16.66666667%] text-[#007aff] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                        class="w-[16.66666667%] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
                       >
                         Total
                       </th>
@@ -267,23 +279,16 @@
               class="w-full flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse lg:justify-between leading-normal font-inter mb-[15px] lg:gap-[15px] print:flex-row print:justify-between"
             >
               <!-- left side  -->
-              <div class="py-[10px] w-[346.44px]">
-                <div
-                  class="px-[15px] py-[6px] rounded-[6px] mb-[10px] mt-[5px] bg-[#b5b5b5] text-[#fff] leading-[21px] text-[14px] my_print_bg_card"
-                >
-                  <b> Payment info: </b>
-                  Credit Card - 236***********928
-                </div>
-                <p class="mb-[2px] text-[14px]">
-                  <b class="text-custom-black font-bold">important Note:</b>
+              <div class="py-[10px] w-[346.44px] pr-[15px]">
+                <p class="mb-[2px] text-[14px] text-custom-gray">
+                  <b class="text-custom-black font-bold">Paypal & Stripe:</b>
+                  <br />
+                  invoma@gmail.com
                 </p>
-
-                <p class="leading-[21px] text-[#666] text-[14px]">
-                  Delivery dates are not guaranteed and Seller has
+                <p class="mb-[2px] text-[14px] text-custom-gray">
+                  <b class="text-custom-black font-bold">Card Payment:</b>
                   <br />
-                  no liability for damages that may be incurred
-                  <br />
-                  due to any delay.
+                  Visa, Master Card, American Axpress
                 </p>
               </div>
               <!-- right side  -->
@@ -378,20 +383,20 @@
             <!-- note section  -->
 
             <div
-              class="pt-[15px] px-[20px] border-t-[1px] overflow-hidden border-[#dbdfea] font-inter mt-[30px] lg:text-center"
+              class="flex pb-[20px] border-t-[1px] border-[#dbdfea] justify-between"
             >
-              <p class="mb-[5px] leading-normal">
-                <b class="text-custom-black font-bold text-[14px]">
-                  Terms & Conditions:
-                </b>
-              </p>
-              <ul class="lg:pl-[20px] text-[#666] text-[14px]">
-                <li class="mb-[5px] leading-normal">
-                  All claims relating to quantity or shipping errors shall be
-                  waived by Buyer unless made in writing to Seller within thirty
-                  (30) days after delivery of goods to the address stated.
-                </li>
-              </ul>
+              <div class="leading-[22px]">
+                <p class="text-custom-blue mb-[5px] text-[18px] leading-[22px]">
+                  Thank you for your business.
+                </p>
+                <p class="text-[#111] font-bold text-[12px] leading-[22px]">
+                  Terms & Condition
+                </p>
+                <p class="text-[12px] text-custom-gray leading-[22px] m-0">
+                  IInvoice was created on a computer and is valid without the
+                  signature and seal.
+                </p>
+              </div>
             </div>
           </div>
 

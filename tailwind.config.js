@@ -10,6 +10,13 @@ module.exports = {
       lg: "1000px",
     },
     extend: {
+      zIndex: {
+        2: "2",
+      },
+      skew: {
+        35: "35deg",
+      },
+
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
@@ -17,6 +24,8 @@ module.exports = {
         "custom-bg": "#f5f6fa",
         "custom-white": "#fff",
         "custom-black": "#111",
+        "custom-blue": "#007aff",
+        "custom-gray": "#666",
       },
     },
   },
