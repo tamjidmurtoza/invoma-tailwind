@@ -47,19 +47,21 @@
   <body>
     <div class="bg-custom-bg w-full leading-[1.5em] font-inter">
       <div
-        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto md:max-w-full md:mx-[20px] sm:mx-[20px] lg:px-[15px] print:m-0 print:p-0"
       >
         <div id="invoice" class="relative pb-[30px]">
           <div
-            class="mx-auto overflow-hidden px-[50px] lg:mb-0 bg-custom-white print:mx-0 print:px-[20px]"
+            class="mx-auto overflow-hidden lg:mb-0 bg-custom-white px-[20px] print:mx-0 lmd:px-[50px] print:px-[20px] pt-[30px] lmd:pt-[0px]"
           >
             <div
-              class="h-[110px] relative items-center flex justify-between mb-[15px] lg:flex print:flex print:mb-[15px]"
+              class="lmd:h-[110px] h-[59.98px] relative lmd:items-center flex justify-between mb-[12px] lg:flex print:flex print:mb-[12px] print:items-center print:h-[110px] items-center"
             >
               <div
                 class="w-[30%] mt-0 leading-[22px] md:mb-[15px] lg:mb-0 print:mb-0"
               >
-                <div class="mt-0 leading-[22px] w-[92.15px] p-0">
+                <div
+                  class="mt-0 leading-[22px] w-[78.98px] lmd:w-[92.15px] p-0 print:w-[92.15px]"
+                >
                   <img
                     class="w-full flex items-center"
                     src="/assets/images/img/logo.svg"
@@ -67,28 +69,40 @@
                   />
                 </div>
               </div>
-              <div class="z-2 text-right leading-[22px] w-[60%] print:w-[40px]">
+              <div
+                class="z-2 leading-[22px] w-[60%] justify-end items-center my-auto text-center hidden lmd:flex print:flex"
+              >
+                <!-- <div
+                  class="leading-[15px] uppercase text-white text-[50px] my_print_text flex lg:items-center print_bg_blue lg:block sm:hidden lmd:block print:block print:text-white print:text-center"
+                >
+                  INVOICE
+                </div> -->
+
                 <div
-                  class="leading-[15px] uppercase text-[#fff] text-[50px] text-right my_print_text h-[50px] flex justify-end items-center print_bg_blue"
+                  class="leading-[15px] uppercase text-[#fff] text-[50px] text-right my_print_text justify-end items-center"
                 >
                   INVOICE
                 </div>
               </div>
+
               <div
-                class="bg-[#007aff] absolute h-[110px] top-0 w-[70%] right-[-100px] overflow-hidden leading-[22px] transform skew-x-35 my_print"
+                class="bg-[#007aff] absolute h-[110px] top-0 w-[70%] right-[-100px] overflow-hidden leading-[22px] transform skew-x-35 my_print hidden lmd:flex print:flex"
               ></div>
             </div>
+
             <div
               class="h-[29px] relative flex items-center justify-between mb-[25px] leading-[22px]"
             >
-              <div class="relative z-1 leading-[22px] text-[#666] text-[14px]">
+              <div
+                class="relative z-1 leading-[22px] text-[#666] text-[14px] hidden lmd:block print:block"
+              >
                 <b class="text-[#111] font-bold leading-[22px]"
-                  >Payment Method:
-                </b>
+                  >Payment Method:</b
+                >
                 Paypal, Western Union
               </div>
               <div
-                class="z-2 leading-[22px] text-[#fff] text-[14px] flex text-right my_print_text print:text-white"
+                class="z-2 leading-[22px] text-[#fff] text-[14px] flex text-right my_print_text ml-[15px]"
               >
                 <p class="mr-[20px] leading-[22px] text-right p-0">
                   Invoice No:
@@ -100,12 +114,12 @@
                 </p>
               </div>
               <div
-                class="mr-0 transform skew-x-35 h-[100%] absolute w-[57.5%] right-[-60px] overflow-hidden bg-[#007aff] leading-[22px] my_print"
+                class="mr-0 h-[100%] absolute w-[100%] lmd:w-[57.5%] lmd:right-[-60px] overflow-hidden bg-[#007aff] leading-[22px] my_print lmd:transform lmd:skew-x-35 print:w-[57.5%] print:skew-x-35 print:right-[-60px]"
               ></div>
             </div>
 
             <div
-              class="flex lg:flex-row justify-between font-inter text-custom-black text-[14px] leading-[1.5em] md:flex-row mb-[13px]"
+              class="flex sm:flex-col flex-row justify-between font-inter text-custom-black text-[14px] leading-[1.5em] md:flex-row mb-[13px]"
             >
               <div class=" ">
                 <p class="mb-[2px] my_print_text">
@@ -115,7 +129,9 @@
                     Invoice To:
                   </b>
                 </p>
-                <p class="text-[#666] leading-[21px]">
+                <p
+                  class="text-[#666] leading-[21px] lg:mb-0 md:mb-0 sm:mb-[15px]"
+                >
                   Lowell H. Dominguez
                   <br />
                   84 Spilman Street, London
@@ -124,7 +140,7 @@
                   <br />lowell@gmail.com
                 </p>
               </div>
-              <div class="text-right">
+              <div class="lg:text-right md:text-right sm:text-left">
                 <p class="mb-[2px]">
                   <b class="text-custom-black font-bold leading-[21px]"
                     >Pay To:</b
@@ -141,13 +157,13 @@
               </div>
             </div>
             <!-- table  -->
-            <div class="overflow-hidden">
-              <div class="lg:w-full leading-[21px]">
-                <table class="font-inter w-full">
+            <div class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px]">
+              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
+                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
                   <thead
                     class="text-[14px] my_print h-[42.19px] bg-[#007aff] text-white"
                   >
-                    <tr class="">
+                    <tr>
                       <th
                         class="font-semibold px-[15px] py-[10px] text-left w-[187.5px] leading-[21px] font-inter"
                       >
@@ -169,7 +185,7 @@
                         Qty
                       </th>
                       <th
-                        class="w-[124,69px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                        class="w-[124.69px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
                       >
                         Total
                       </th>
@@ -258,7 +274,7 @@
             </div>
             <!-- footer section  -->
             <div
-              class="w-full flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse lg:justify-between leading-normal font-inter mb-[15px] lg:gap-[15px] print:flex-row print:justify-between"
+              class="w-full flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse lg:justify-between leading-normal font-inter mb-[15px] lg:gap-[15px] print:flex-row print:justify-between sm:w-full"
             >
               <!-- left side  -->
               <div class="py-[10px] px-[15px] w-[346.44px]">
@@ -274,9 +290,9 @@
               </div>
               <!-- right side  -->
               <div
-                class="text-[14px] lg:w-[42%] md:w-full text-right print:w-[42%]"
+                class="text-[14px] lg:w-[42%] md:w-full text-right sm:w-full print:w-[42%]"
               >
-                <table class="mt-[-1px] mb-[15px]">
+                <table class="mt-[-1px] mb-[15px] sm:w-full">
                   <tbody class="bg-custom-bg my_print_bg">
                     <tr
                       class="font-bold text-custom-black text-left border-t-[1px]"
@@ -369,14 +385,14 @@
           </div>
 
           <div
-            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
+            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white mt-[20px]"
           >
             <a
               href="javascript:window.print()"
-              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33] sm:flex sm:justify-center sm:items-center"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full md:h-[42px] sm:h-[20px] text-[#007aff] flex justify-center items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -422,7 +438,7 @@
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="md:hidden sm:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -465,7 +481,7 @@
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="md:hidden sm:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
