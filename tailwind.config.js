@@ -27,6 +27,8 @@ module.exports = {
         "custom-black": "#111",
         "custom-blue": "#007aff",
         "custom-gray": "#666",
+        "custom-white": "#FFFFFFE6",
+        customWhite: "rgba(255, 255, 255, 0.65)",
       },
     },
   },
