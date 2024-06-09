@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Purpose Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <style>
+      @media print {
+        .print_absolute {
+          position: absolute;
+        }
+        .my_print {
+          background-color: #007aff !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .my_print_text {
+          color: #fff !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .print_text {
+          color: #fff !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .my_print_bg {
+          background-color: #f5f6fa !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .my_print_bg_card {
+          background-color: #b5b5b5 !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+        .print_bg_blue {
+          background-color: #007aff1a !important;
+          -webkit-print-color-adjust: exact !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-custom-bg w-full leading-[1.5em] font-inter lmd:pb-[30px]">
+      <div
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0 print:p-0"
+      >
+        <div class="leading-[22px] relative">
+          <div
+            class="bg-white rounded-[10px] leading-[22px] print:p-[20px] relative mb-[20px]"
+            id="invoice"
+          >
+            <div class="leading-[21px] pb-[40px]">
+              <div
+                class="lmd:flex justify-between items-center px-[50px] py-[60px] relative bg-custom-blue rounded-t-[10px] my_print print:flex"
+              >
+                <div class="print:h-full z-2">
+                  <div class="">
+                    <img
+                      class="h-full my-auto"
+                      src="/assets/images/img/logo_white.svg"
+                      alt="Logo"
+                    />
+                  </div>
+                </div>
+                <div class="leading-[21px] text-[14px]">
+                  <div
+                    class="border-l-[1px] border-white leading-[21px] text-[#fff] pl-[15px]"
+                  >
+                    Laralink Ltd
+                    <br />
+                    86-90 Paul Street, London
+                    <br />
+                    Phone: +990 9866 334 2134
+                    <br />
+                    Email: demo@gmail.com
+                  </div>
+                </div>
+                <div
+                  class="absolute left-0 leading-[15px] text-[18.4vw] lmd:text-[165px] font-bold uppercase text-[#fff] w-full text-center tracking-[18px] h-[100%] flex items-center top-0 px-[30px] py-[20px] opacity-[0.08]"
+                >
+                  Invoice
+                </div>
+              </div>
+              <div
+                class="relative z-10 flex justify-between items-end px-[50px] mt-[-25px] pb-[40px]"
+              >
+                <div
+                  class="px-[30px] py-[20px] bg-[#f5f6fa] leading-[21px] text-[14px] my_print_bg"
+                >
+                  <p class="mb-[2px]">
+                    <b>Invoice To:</b>
+                  </p>
+                  <p class="text-custom-gray">
+                    Lowell H. Dominguez
+                    <br />
+                    84 Spilman Street, London
+                    <br />
+                    lowell@gmail.com
+                    <br />
+                    +990 9879 654 0976
+                  </p>
+                </div>
+                <div class="text-right leading-[21px] text-[14px]">
+                  <p class="m-0 text-custom-gray">
+                    Invoice No:
+                    <b class="text-custom-black">#LL93784</b>
+                  </p>
+                  <p class="m-0 text-custom-gray">
+                    Date:
+                    <b class="text-custom-black">01.07.2022</b>
+                  </p>
+                </div>
+              </div>
+
+              <div class="mb-[30px] leading-[22px] px-[50px]">
+                <div class="leading-[22px]">
+                  <div class="overflow-x-auto leading-[22px]">
+                    <table
+                      class="font-inter w-full border bg-custom-bg border-[#dbdfea] border-collapse my_print_bg"
+                    >
+                      <thead class="text-[14px] h-[42.19px]">
+                        <tr class="bg-custom-blue text-[#fff] my_print">
+                          <th
+                            class="w-[311.67px] font-semibold px-[15px] py-[10px] text-left leading-[21px] border-r-[1px] border-[#FFFFFF3B]"
+                          >
+                            Description
+                          </th>
+                          <th
+                            class="w-[62.33px] font-semibold px-[15px] py-[10px] text-left leading-[21px] border-r-[1px] border-[#FFFFFF3B]"
+                          >
+                            Qty
+                          </th>
+                          <th
+                            class="w-[124.66px] font-semibold px-[15px] py-[10px] text-left leading-[21px] border-r-[1px] border-[#FFFFFF3B]"
+                          >
+                            Price
+                          </th>
+                          <th
+                            class="w-[124.66px] font-semibold px-[15px] py-[10px] text-left leading-[21px] border-r-[1px] border-[#FFFFFF3B]"
+                          >
+                            Discount
+                          </th>
+                          <th
+                            class="w-[124.69px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                          >
+                            Total
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-[14px]">
+                        <tr class="text-[#666] border border-[#dbdfea]">
+                          <td class="px-[15px] py-[10px]">Laptop</td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            1
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            $350
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            10%
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] text-end border border-[#dbdfea]"
+                          >
+                            $350
+                          </td>
+                        </tr>
+                        <tr class="text-[#666] border border-[#dbdfea]">
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            Smartphone
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            1
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            $600
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            20%
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] text-end border border-[#dbdfea]"
+                          >
+                            $600
+                          </td>
+                        </tr>
+                        <tr class="text-[#666] border border-[#dbdfea]">
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            Headphones
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            2
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            $200
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            0%
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] text-end border border-[#dbdfea]"
+                          >
+                            $400
+                          </td>
+                        </tr>
+                        <tr class="text-[#666] border border-[#dbdfea]">
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            Backpack
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            1
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            $50
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] border border-[#dbdfea]"
+                          >
+                            0%
+                          </td>
+                          <td
+                            class="px-[15px] py-[10px] text-end border border-[#dbdfea]"
+                          >
+                            $50
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="flex justify-between leading-[22px]">
+                  <div class="py-[20px] px-[15px] w-[346.44px]">
+                    <p class="mb-[2px] text-[14px]">
+                      <b class="text-custom-black font-bold">Payment info:</b>
+                    </p>
+
+                    <p class="leading-[21px] text-[#666] text-[14px]">
+                      Credit Card - 236***********928
+                      <br />
+                      Amount: $1732
+                    </p>
+                  </div>
+                  <table
+                    class="w-full lmd:w-[42%] print:w-[42%] bg-custom-bg my_print_bg"
+                  >
+                    <tbody class="">
+                      <tr
+                        class="font-bold text-custom-black text-left text-[14px] print:border-t-[1px]"
+                      >
+                        <td
+                          class="lg:w-[25%] md:w-full px-[15px] pb-[10px] pt-[10px]"
+                        >
+                          Total
+                        </td>
+                        <td
+                          class="lg:w-[25%] md:w-full text-right px-[15px] pb-[10px] pt-[10px]"
+                        >
+                          $1740
+                        </td>
+                      </tr>
+                      <tr
+                        class="text-custom-black text-left border-t-[1px] border-[#007aff33] text-[14px]"
+                      >
+                        <td
+                          class="font-bold lg:w-[25%] md:w-full px-[15px] pb-[10px] pt-[10px]"
+                        >
+                          Paid
+                        </td>
+                        <td
+                          class="font-bold lg:w-[25%] md:w-full text-right px-[15px] pb-[10px] pt-[10px]"
+                        >
+                          $1000
+                        </td>
+                      </tr>
+
+                      <tr
+                        class="font-bold text-[16px] bg-custom-blue text-[#fff] my_print border-y-[1px] border-[#007aff33]"
+                      >
+                        <td
+                          class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px]"
+                        >
+                          Due
+                        </td>
+                        <td
+                          class="lg:w-[25%] md:w-full px-[15px] py-[10px] text-right"
+                        >
+                          $740
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="py-[15px] px-[15px] overflow-hidden bg-custom-bg font-inter mx-[50px] mb-[15px] leading-[21px] my_print_bg"
+              >
+                <p class="mb-[5px] pl-[5px] leading-[22px]">
+                  <b class="text-custom-black font-bold text-[14px]">
+                    Terms & Conditions:
+                  </b>
+                </p>
+                <ul class="list-disc pl-[20px] text-[#666] text-[14px]">
+                  <li class="mb-[5px]">
+                    All claims relating to quantity or shipping errors shall be
+                    waived by Buyer unless made in writing to Seller within
+                    thirty (30) days after delivery of goods to the address
+                    stated.
+                  </li>
+                  <li class="mb-[5px]">
+                    Delivery dates are not guaranteed and Seller has no
+                    liability for damages that may be incurred due to any delay
+                    in shipment of goods hereunder. Taxes are excluded unless
+                    otherwise stated.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white mt-[20px] lmd:mt-0"
+          >
+            <a
+              href="javascript:window.print()"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+            >
+              <span
+                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <rect
+                    x="128"
+                    y="240"
+                    width="256"
+                    height="208"
+                    rx="24.32"
+                    ry="24.32"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></rect>
+                  <path
+                    d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <circle cx="392" cy="184" r="24" fill="currentColor"></circle>
+                </svg>
+              </span>
+
+              <p
+                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+              >
+                <span
+                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  >Print</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+
+            <a
+              id="downloadPdfButton"
+              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
+            >
+              <span
+                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  ></path>
+                </svg>
+              </span>
+
+              <p
+                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+              >
+                <span
+                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  >Download</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("downloadPdfButton")
+          .addEventListener("click", function () {
+            // Select the HTML element containing the invoice
+            const invoiceElement = document.getElementById("invoice");
+
+            // Convert the HTML element to a PDF
+            html2pdf().from(invoiceElement).save();
+          });
+      });
+    </script>
+  </body>
+</html>
