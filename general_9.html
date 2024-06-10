@@ -11,38 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/print.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <style>
-      @media print {
-        .print_absolute {
-          position: absolute;
-        }
-        .my_print {
-          background-color: #007aff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg {
-          background-color: #f5f6fa !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg_card {
-          background-color: #b5b5b5 !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_bg_blue {
-          background-color: #007aff1a !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -60,13 +30,13 @@
               class="absolute top-0 flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2"
             >
               <span
-                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
               <span
-                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
               <span
-                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
             </div>
 
@@ -74,13 +44,13 @@
               class="absolute bottom-[-15px] flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2"
             >
               <span
-                class="h-[100px] w-[5px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
               <span
-                class="h-[100px] w-[5px] block mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] block mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
               <span
-                class="h-[100px] w-[5px] block mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue my_print"
+                class="h-[100px] w-[5px] block mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
               ></span>
             </div>
 
@@ -88,7 +58,7 @@
               class="h-[230px] w-[250px] absolute top-0 right-0 overflow-hidden"
             >
               <div
-                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[-199px] left-[67px] overflow-hidden bg-custom-blue my_print"
+                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[-199px] left-[67px] overflow-hidden bg-custom-blue custom-blue-print"
               ></div>
             </div>
 
@@ -112,7 +82,7 @@
               class="h-[230px] w-[250px] absolute bottom-0 left-0 overflow-hidden"
             >
               <div
-                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[135px] left-[-153px] overflow-hidden bg-custom-blue my_print"
+                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[135px] left-[-153px] overflow-hidden bg-custom-blue custom-blue-print"
               ></div>
             </div>
 
@@ -156,7 +126,7 @@
                 class="flex sm:flex-col flex-row justify-between font-inter text-custom-black text-[14px] leading-[1.5em] md:flex-row mb-[10px]"
               >
                 <div class=" ">
-                  <p class="mb-[2px] my_print_text">
+                  <p class="mb-[2px] custom-white-print">
                     <b
                       class="text-custom-black font-bold mb-[2px] leading-[1.5em]"
                     >
@@ -194,7 +164,9 @@
                   <div class="overflow-x-auto leading-[22px]">
                     <table class="font-inter w-full">
                       <thead class="text-[14px] h-[42.19px]">
-                        <tr class="bg-custom-blue text-[#fff] my_print">
+                        <tr
+                          class="bg-custom-blue text-[#fff] custom-blue-print"
+                        >
                           <th
                             class="font-medium px-[15px] py-[10px] text-left w-[62.33px] font-inter"
                           >
@@ -233,7 +205,7 @@
                           <td class="px-[15px] py-[10px] text-end">$350</td>
                         </tr>
                         <tr
-                          class="border-t-[1px] border-[#dbdfea] text-[#666] my_print_bg h-[68.38px]"
+                          class="border-t-[1px] border-[#dbdfea] text-[#666] h-[68.38px]"
                         >
                           <td class="px-[15px] py-[10px]">
                             2. Web Development
@@ -449,18 +421,6 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("downloadPdfButton")
-          .addEventListener("click", function () {
-            // Select the HTML element containing the invoice
-            const invoiceElement = document.getElementById("invoice");
-
-            // Convert the HTML element to a PDF
-            html2pdf().from(invoiceElement).save();
-          });
-      });
-    </script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

@@ -1,12 +1,11 @@
-<script>
-  document.getElementById("downloadPdfButton").addEventListener("click", function() {
-    // Create a new jsPDF instance
-    var doc = new jsPDF();
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("downloadPdfButton")
+    .addEventListener("click", function () {
+      // Select the HTML element containing the invoice
+      const invoiceElement = document.getElementById("invoice");
 
-    // Add content to the PDF
-    doc.text(20, 20, 'Hello, World!');
-
-    // Save the PDF
-    doc.save('invoice.pdf');
-  });
-</script>
+      // Convert the HTML element to a PDF
+      html2pdf().from(invoiceElement).save();
+    });
+});

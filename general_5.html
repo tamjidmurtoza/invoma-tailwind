@@ -11,38 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/print.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <style>
-      @media print {
-        .print_absolute {
-          position: absolute;
-        }
-        .my_print {
-          background-color: #007aff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg {
-          background-color: #f5f6fa !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg_card {
-          background-color: #b5b5b5 !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_bg_blue {
-          background-color: #007aff1a !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-      }
-    </style>
   </head>
 
   <body class="bg-gray-100 font-inter">
@@ -61,7 +31,7 @@
               <p class="m-0 font-[14px]">Invoice No: LL230912</p>
             </div>
             <div
-              class="lmd:grid grid-cols-4 bg-custom-blue text-[14px] mb-[25px] text-white justify-center p-[20px] items-center h-full lmd:h-[90px] gap-[20px] space-y-[10px] lmd:space-y-0 leading-[21px] my_print print:space-y-0 print:h-full print:grid"
+              class="lmd:grid grid-cols-4 bg-custom-blue text-[14px] mb-[25px] text-white justify-center p-[20px] items-center h-full lmd:h-[90px] gap-[20px] space-y-[10px] lmd:space-y-0 leading-[21px] custom-blue-print print:space-y-0 print:h-full print:grid"
             >
               <div class="print:h-full">
                 <div class="h-[50px]">
@@ -98,7 +68,7 @@
                   Amount Due
                 </p>
                 <div
-                  class="h-[62px] text-[30px] font-bold text-custom-blue px-[15px] py-[15px] bg-[#007aff1a] border border-[#007aff33] mb-[5px] leading-[22px] text-center flex items-center justify-center print_bg_blue"
+                  class="h-[62px] text-[30px] font-bold text-custom-blue px-[15px] py-[15px] bg-[#007aff1a] border border-[#007aff33] mb-[5px] leading-[22px] text-center flex items-center justify-center custom-light-blue-print"
                 >
                   $1732
                 </div>
@@ -285,7 +255,7 @@
                     </tr>
 
                     <tr
-                      class="font-bold text-[16px] bg-[#007aff1a] text-custom-blue my_print_bg border-y-[1px] border-[#007aff33]"
+                      class="font-bold text-[16px] bg-[#007aff1a] text-custom-blue custom-light-blue-print border-y-[1px] border-[#007aff33]"
                     >
                       <td
                         class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px]"
@@ -425,18 +395,6 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("downloadPdfButton")
-          .addEventListener("click", function () {
-            // Select the HTML element containing the invoice
-            const invoiceElement = document.getElementById("invoice");
-
-            // Convert the HTML element to a PDF
-            html2pdf().from(invoiceElement).save();
-          });
-      });
-    </script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

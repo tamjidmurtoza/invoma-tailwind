@@ -11,43 +11,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
-
+    <link rel="stylesheet" href="/assets/css/print.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <style>
-      @media print {
-        .my_print {
-          background-color: #f5f6fa !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-      }
-    </style>
   </head>
-  <body>
-    <div
-      class="bg-custom-bg w-full leading-[1.5em] min-h-screen lmd:h-screen overflow-auto"
-    >
+  <body class="bg-custom-bg">
+    <div class="w-full leading-[1.5em]">
       <div
-        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
+        class="pt-[30px] max-w-[880px] lg:mx-auto mx-[0px] px-[15px] pb-[30px] print:m-0 font-inter"
       >
         <div class="relative lg:space-y-0">
           <div
             id="invoice"
-            class="mx-auto lg:px-[50px] lg:pt-[50px] md:mb-[30px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
+            class="mx-auto lg:p-[50px] md:px-[20px] md:py-[30px] bg-custom-white print:p-[30px] print:m-0 overflow-hidden relative"
           >
-            <div
-              class="absolute h-[200px] opacity-[0.04] left-1/2 transform -translate-x-1/2 top-[40px]"
-            >
-              <img
-                class="max-h-[100%]"
-                src="/assets/images/img/coffy_shop_img.svg"
-                alt="coffee_image"
-              />
+            <div class="absolute top-0 right-0 leading-[22px] w-full h-[151px]">
+              <svg
+                viewBox="0 0 850 151"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="transform scale-x-[-1] scale-y-[-1] w-full h-[151px]"
+                preserveAspectRatio="xMidYMin slice"
+              >
+                <path
+                  d="M0 150.889H850V0.889408H665.496C633.762 0.889408 603.327 10.2481 580.887 26.9081L490.888 93.7224C468.447 110.381 438.014 119.74 406.279 119.74H0V150.889Z"
+                  fill="#007AFF"
+                  fill-opacity="0.1"
+                ></path>
+              </svg>
             </div>
-            <div
-              class="lmd:flex md:flex lmd:flex-row flex-col lmd:justify-between lmd:items-center gap-[20px] lmd:gap-0 lmd:h-[50px] print:flex-row print:justify-between print:items-center"
-            >
+
+            <div class="absolute bottom-0 left-0 leading-[22px] w-full h-auto">
+              <svg
+                viewBox="0 0 850 151"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full h-auto"
+              >
+                <path
+                  d="M0 150.889H850V0.889408H665.496C633.762 0.889408 603.327 10.2481 580.887 26.9081L490.888 93.7224C468.447 110.381 438.014 119.74 406.279 119.74H0V150.889Z"
+                  fill="#007AFF"
+                  fill-opacity="0.1"
+                ></path>
+              </svg>
+            </div>
+            <div class="flex flex-row justify-between items-center mb-[65px]">
               <img
-                class="text-[#666] w-[65px]"
+                class="text-[#666] h-[60px]"
                 src="/assets/images/img/logo.svg"
                 alt="logo"
               />
@@ -58,30 +67,34 @@
             </div>
 
             <div
-              class="flex lg:flex-row md:flex-row justify-between items-center h-[21px]"
+              class="flex flex-col-reverse lmd:flex-row items-center lmd:justify-between h-[41px] print:flex-row"
             >
+              <div class="my-auto print:mr-[20px]">
+                <img
+                  class="h-[18px]"
+                  src="/assets/images/img/arrow_bg.svg"
+                  alt="arrow_image"
+                />
+              </div>
               <div
-                class="lg:min-h-[18px] md:h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 md:items-center hidden lmd:block print:block"
-              ></div>
-              <div
-                class="text-[14px] font-inter flex lmd:ml-[20px] m-0 leading-[24px] lmd:mt-0 mt-[20px] print:mt-0"
+                class="py-2.5 pl-10 flex leading-[22px] text-[14px] relative print:w-[70%]"
               >
-                <p
-                  class="text-[#666] flex items-center leading-[1.5em] mr-[20px]"
-                >
+                <p class="mr-[20px] leading-[22px] text-custom-gray">
                   Invoice No:
-                  <b class="text-custom-black font-bold ml-[4px]">#LL93784</b>
+                  <b class="text-[#111]">#LL93784</b>
                 </p>
-
-                <p class="text-[#666] flex items-center">
+                <p class="mr-[20px] text-custom-gray leading-[22px]">
                   Date:
-                  <b class="text-custom-black font-bold ml-[4px]">01.07.2022</b>
+                  <b>01.07.2022</b>
                 </p>
+                <div
+                  class="absolute w-[calc(100%+100px)] h-[41px] top-0 left-0 [border-radius:20px_0_0_0] transform -skew-x-35 bg-[#007AFF1A] custom-light-blue-print"
+                ></div>
               </div>
             </div>
 
             <div
-              class="mt-[20px] flex flex-col lmd:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] mb-[15px] leading-[1.5em] print:flex-row"
+              class="mt-[20px] flex lg:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] mb-[15px] leading-[1.5em] md:flex-row"
             >
               <div class="">
                 <p class="mb-[2px]">
@@ -100,7 +113,7 @@
                   <br />lowell@gmail.com
                 </p>
               </div>
-              <div class="lmd:text-right text-left print:text-right">
+              <div class="lg:text-right md:text-right">
                 <p class="mb-[2px]">
                   <b class="text-custom-black font-bold leading-[21px]"
                     >Pay To:</b
@@ -117,31 +130,35 @@
               </div>
             </div>
             <!-- table  -->
-            <div
-              class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px] border-y-[1px]"
-            >
-              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
-                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
-                  <thead class="text-[14px] h-[42.19px] bg-custom-bg">
-                    <tr>
+            <div class="border-y-[1px] border-[#dbdfea] overflow-hidden">
+              <div class="lg:w-full leading-[21px]">
+                <table class="font-inter w-full">
+                  <thead
+                    class="bg-[#007AFF1A] text-[14px] custom-light-blue-print h-[42.19px]"
+                  >
+                    <tr class="">
                       <th
-                        class="font-semibold px-[15px] py-[10px] text-left w-[437.5px] leading-[21px] font-inter"
+                        class="text-custom-black font-semibold px-[15px] py-[10px] text-left w-[50px] leading-[21px] font-inter"
                       >
                         Item
                       </th>
-
                       <th
-                        class="w-[125px] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[249.33px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                      >
+                        Description
+                      </th>
+                      <th
+                        class="w-[124.66px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Price
                       </th>
                       <th
-                        class="w-[62px] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[62.33px] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Qty
                       </th>
                       <th
-                        class="w-[124.69px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                        class="w-[124,69px] text-custom-black font-semibold px-[15px] py-[10px] text-end leading-[21px]"
                       >
                         Total
                       </th>
@@ -149,56 +166,48 @@
                   </thead>
                   <tbody class="text-[14px]">
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Colombia Dark Roast
+                      <td class="w-[25%] px-[15px] py-[10px]">
+                        1. Website Design
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$40</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $80
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Six web page designs and three times revision
                       </td>
+                      <td class="w-[16%] px-[15px] py-[10px]">$350</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">$350</td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Swiss Water Decaf
+                      <td class="w-[25%] px-[15px] py-[10px]">
+                        2. Web Development
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$35</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $70
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Convert pixel-perfect frontend and make it dynamic
                       </td>
+                      <td class="w-[16%] px-[15px] py-[10px]">$600</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">$600</td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Double Espresso
+                      <td class="w-[25%] px-[15px] py-[10px]">
+                        3. App Development
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$60</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]"></td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $60
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Android & Ios Application Development
                       </td>
+                      <td class="w-[16%] px-[15px] py-[10px]">$200</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">2</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">$400</td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Coffee Mug
+                      <td class="w-[25%] px-[15px] py-[10px]">
+                        4. Digital Marketing
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$25</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $50
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Facebook, Youtube and Google Marketing
                       </td>
+                      <td class="w-[16%] px-[15px] py-[10px]">$100</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">3</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">$300</td>
                     </tr>
                   </tbody>
                 </table>
@@ -206,98 +215,74 @@
             </div>
             <!-- footer section  -->
             <div
-              class="w-full flex flex-col-reverse lmd:flex-row lmd:justify-between leading-normal font-inter mb-[15px] gap-[15px] print:flex-row"
+              class="w-full flex lg:flex-row md:flex-row sm:flex-col-reverse lg:justify-between leading-normal font-inter mb-[30px] gap-[15px]"
             >
               <!-- left side  -->
-              <div class="w-[58%] text-[14px] px-[15px] py-[10px]">
+              <div class="w-[435px] flex-none text-[14px] px-[15px] py-[10px]">
                 <p class="mb-[2px]">
                   <b class="text-custom-black font-bold">Payment info:</b>
                 </p>
                 <p class="text-[#666] text-[14px]">
-                  Credit Card - 236***********928 <br />Amount: $272
+                  Credit Card - 236***********928 <br />Amount: $1732
                 </p>
               </div>
               <!-- right side  -->
-              <div
-                class="text-[14px] lg:w-[42%] md:w-full text-right print:w-[42%] font-inter"
-              >
-                <table class="mb-[15px] bg-custom-bg my_print">
+              <div class="text-[14px] w-[315px] text-right">
+                <table class="mt-[-1px] w-full">
                   <tbody class="">
                     <tr class="font-bold text-custom-black text-left">
-                      <td class="lg:w-[25%] md:w-full px-[15px] pt-[10px]">
+                      <td class="w-[25%] px-[15px] pb-[10px] pt-[10px]">
                         Subtoal
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px]"
+                        class="w-[25%] text-right px-[15px] pb-[10px] pt-[10px]"
                       >
-                        $260
+                        $1650
                       </td>
                     </tr>
-
-                    <tr class="text-custom-black text-left">
-                      <td class="lg:w-[25%] md:w-full px-[15px] pt-[10px]">
-                        Discount <span class="text-[#b5b5b5]"> (0%) </span>
+                    <tr class="">
+                      <td
+                        class="text-[14px] text-custom-black text-left px-[15px] pb-[10px] h-[32.5px]"
+                      >
+                        Tax <span class="text-[#b5b5b5]">(5%)</span>
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px] text-[red]"
+                        class="text-right leading-normal px-[15px] h-[32.5px]"
                       >
-                        -$0
-                      </td>
-                    </tr>
-
-                    <tr class="text-custom-black text-left">
-                      <td
-                        class="lg:w-[25%] md:w-full px-[15px] pb-[10px] pt-[10px]"
-                      >
-                        Tax <span class="text-[#b5b5b5]"> (5%) </span>
-                      </td>
-                      <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pb-[10px] pt-[10px]"
-                      >
-                        +$12
+                        +$82
                       </td>
                     </tr>
                     <tr
-                      class="text-custom-black font-bold text-[16px] border-y"
+                      class="border-y border-[#dbdfea] text-custom-black font-bold text-[16px]"
                     >
-                      <td
-                        class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px] text-[16px] !important"
-                      >
-                        Grand Total
-                      </td>
-                      <td
-                        class="lg:w-[25%] md:w-full px-[15px] py-[10px] text-[16px] !important"
-                      >
-                        $272
-                      </td>
+                      <td class="text-left px-[15px] py-[10px]">Grand Total</td>
+                      <td class="px-[15px] py-[10px]">$1732</td>
                     </tr>
                   </tbody>
                 </table>
-                <hr class="lmd:hidden print:hidden" />
               </div>
             </div>
             <!-- note section  -->
 
-            <div
-              class="py-[20px] border-t-[1px] overflow-hidden border-[#dbdfea] font-inter text-center"
-            >
-              <p class="mb-[5px] leading-[21px]">
+            <div class="py-[15px] px-[15px] overflow-hidden">
+              <p class="mb-[2px] leading-normal">
                 <b class="text-custom-black font-bold text-[14px]">
                   Terms & Conditions:
                 </b>
               </p>
-              <ul class="pl-[20px] text-[#666] text-[14px]">
-                <li class="mb-[5px] leading-[21px]">
-                  Your use of the Website shall be deemed to constitute your
-                  understanding and approval of, and agreement to be bound by,
-                  the Privacy Policy and you consent to the collection.
+              <ul class="list-disc pl-[15px] text-[#666] text-[14px]">
+                <li class="mb-[5px] leading-normal">
+                  All claims relating to quantity or shipping errors.
+                </li>
+                <li class="mb-[5px] leading-normal">
+                  Delivery dates are not guaranteed and Seller.
                 </li>
               </ul>
             </div>
           </div>
 
           <div
-            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
+            class="flex lg:flex-col lg:w-[47px] gap-[3px] lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
           >
             <a
               href="javascript:window.print()"
@@ -350,7 +335,7 @@
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="sm:hidden md:hidden lmd:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -363,7 +348,7 @@
 
             <a
               id="downloadPdfButton"
-              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933]"
+              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
             >
               <span
                 class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
@@ -408,18 +393,6 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("downloadPdfButton")
-          .addEventListener("click", function () {
-            // Select the HTML element containing the invoice
-            const invoiceElement = document.getElementById("invoice");
-
-            // Convert the HTML element to a PDF
-            html2pdf().from(invoiceElement).save();
-          });
-      });
-    </script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

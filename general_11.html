@@ -11,38 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/print.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <style>
-      @media print {
-        .print_absolute {
-          position: absolute;
-        }
-        .my_print {
-          background-color: #007aff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_text {
-          color: #fff !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg {
-          background-color: #f5f6fa !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .my_print_bg_card {
-          background-color: #b5b5b5 !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-        .print_bg_blue {
-          background-color: #007aff1a !important;
-          -webkit-print-color-adjust: exact !important;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -57,7 +27,7 @@
           >
             <div class="leading-[21px] pb-[40px]">
               <div
-                class="lmd:flex justify-between items-center px-[50px] py-[60px] relative bg-custom-blue rounded-t-[10px] my_print print:flex"
+                class="lmd:flex justify-between items-center px-[50px] py-[60px] relative bg-custom-blue rounded-t-[10px] custom-blue-print print:flex"
               >
                 <div class="print:h-full z-2">
                   <div class="">
@@ -91,7 +61,7 @@
                 class="relative z-10 flex justify-between items-end px-[50px] mt-[-25px] pb-[40px]"
               >
                 <div
-                  class="px-[30px] py-[20px] bg-[#f5f6fa] leading-[21px] text-[14px] my_print_bg"
+                  class="px-[30px] py-[20px] bg-[#f5f6fa] leading-[21px] text-[14px] my_print"
                 >
                   <p class="mb-[2px]">
                     <b>Invoice To:</b>
@@ -122,10 +92,12 @@
                 <div class="leading-[22px]">
                   <div class="overflow-x-auto leading-[22px]">
                     <table
-                      class="font-inter w-full border bg-custom-bg border-[#dbdfea] border-collapse my_print_bg"
+                      class="font-inter w-full border bg-custom-bg border-[#dbdfea] border-collapse my_print"
                     >
                       <thead class="text-[14px] h-[42.19px]">
-                        <tr class="bg-custom-blue text-[#fff] my_print">
+                        <tr
+                          class="bg-custom-blue text-[#fff] custom-blue-print"
+                        >
                           <th
                             class="w-[311.67px] font-semibold px-[15px] py-[10px] text-left leading-[21px] border-r-[1px] border-[#FFFFFF3B]"
                           >
@@ -275,7 +247,7 @@
                     </p>
                   </div>
                   <table
-                    class="w-full lmd:w-[42%] print:w-[42%] bg-custom-bg my_print_bg"
+                    class="w-full lmd:w-[42%] print:w-[42%] bg-custom-bg my_print"
                   >
                     <tbody class="">
                       <tr
@@ -308,7 +280,7 @@
                       </tr>
 
                       <tr
-                        class="font-bold text-[16px] bg-custom-blue text-[#fff] my_print border-y-[1px] border-[#007aff33]"
+                        class="font-bold text-[16px] bg-custom-blue text-[#fff] custom-blue-print border-y-[1px] border-[#007aff33]"
                       >
                         <td
                           class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px]"
@@ -326,7 +298,7 @@
                 </div>
               </div>
               <div
-                class="py-[15px] px-[15px] overflow-hidden bg-custom-bg font-inter mx-[50px] mb-[15px] leading-[21px] my_print_bg"
+                class="py-[15px] px-[15px] overflow-hidden bg-custom-bg font-inter mx-[50px] mb-[15px] leading-[21px] my_print"
               >
                 <p class="mb-[5px] pl-[5px] leading-[22px]">
                   <b class="text-custom-black font-bold text-[14px]">
@@ -461,19 +433,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("downloadPdfButton")
-          .addEventListener("click", function () {
-            // Select the HTML element containing the invoice
-            const invoiceElement = document.getElementById("invoice");
-
-            // Convert the HTML element to a PDF
-            html2pdf().from(invoiceElement).save();
-          });
-      });
-    </script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
