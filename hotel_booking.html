@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/print.css" />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
   </head>
   <body>
@@ -20,12 +19,12 @@
       class="bg-custom-bg w-full leading-[1.5em] min-h-screen lmd:h-screen overflow-auto font-inter"
     >
       <div
-        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full lmd:mx-[50px] px-[15px] print:m-0"
       >
         <div class="relative lg:space-y-0">
           <div
             id="invoice"
-            class="mx-auto lg:px-[50px] lg:pt-[50px] md:mb-[30px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
+            class="mx-auto lg:px-[50px] lg:pt-[50px] md:mb-[30px] md:px-[20px] sm:p-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
           >
             <div
               class="lmd:flex md:flex lmd:flex-row flex-col lmd:justify-between lmd:items-center gap-[20px] lmd:gap-0 print:flex-row print:justify-between print:items-center border-b border-[#dbdfea] pb-[15px] mb-[30px]"
@@ -38,7 +37,7 @@
                 />
               </div>
               <div
-                class="font-inter w-[70%] text-right leading-[21px] text-custom-gray text-[14px]"
+                class="font-inter w-[70%] lmd:text-right leading-[21px] text-custom-gray text-[14px] print:text-right"
               >
                 <b class="text-[30px] font-medium text-custom-black">Invoice</b>
                 <p>Invoice Number - LL87265</p>
@@ -46,9 +45,9 @@
             </div>
 
             <div
-              class="mt-[20px] flex flex-col lmd:flex-row justify-between font-inter text-custom-black text-[14px] mb-[26px] leading-[22px] print:flex-row"
+              class="mt-[20px] flex flex-col lmd:flex-row justify-between font-inter text-custom-black text-[14px] mb-[28px] leading-[22px] print:flex-row"
             >
-              <div class="w-[30%] leading-[21px]">
+              <div class="w-[30%] leading-[21px] lmd:mb-0 mb-[10px] print:mb-0">
                 <p class="mb-[2px] leading-[21px] text-custom-gray">
                   <b class="text-custom-black font-bold mb-[2px] text-[18px]">
                     Invoma Hotel
@@ -68,7 +67,7 @@
                 </p>
               </div>
               <div
-                class="px-[20px] py-[12px] grid grid-cols-3 gap-[10px_20px] bg-custom-bg border border-[#dbdfea] overflow-hidden leading-[21px] rounded-[10px] h-[120px] w-[70%]"
+                class="px-[20px] py-[12px] grid grid-cols-3 gap-[10px_20px] bg-custom-bg border border-[#dbdfea] overflow-hidden leading-[21px] rounded-[10px] h-[120px] lmd:w-[70%] my_print print:w-[70%]"
               >
                 <div class="text-[14px]">
                   <span class="text-custom-gray">Check In:</span>
@@ -221,7 +220,7 @@
                       <td
                         class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px]"
                       >
-                        $260
+                        $1000
                       </td>
                     </tr>
 
@@ -232,7 +231,7 @@
                       <td
                         class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px]"
                       >
-                        -$0
+                        -$100
                       </td>
                     </tr>
 
@@ -245,11 +244,11 @@
                       <td
                         class="lg:w-[25%] md:w-full text-right px-[15px] pb-[10px] pt-[10px]"
                       >
-                        +$12
+                        +$50
                       </td>
                     </tr>
                     <tr
-                      class="text-custom-black font-bold text-[16px] bg-custom-bg"
+                      class="text-custom-black font-bold text-[16px] bg-custom-bg my_print"
                     >
                       <td
                         class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px] text-[18px] rounded-l-[6px] !important"
@@ -257,9 +256,9 @@
                         Grand Total
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full px-[15px] py-[10px] text-[16px] rounded-r-[6px] !important"
+                        class="lg:w-[25%] md:w-full px-[15px] py-[10px] text-[18px] rounded-r-[6px] !important"
                       >
-                        $272
+                        $950
                       </td>
                     </tr>
                   </tbody>
