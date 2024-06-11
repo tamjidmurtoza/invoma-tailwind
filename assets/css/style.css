@@ -831,6 +831,10 @@ video {
   margin-top: -25px;
 }
 
+.mt-\[10px\]{
+  margin-top: 10px;
+}
+
 .mt-\[15px\]{
   margin-top: 15px;
 }
@@ -849,10 +853,6 @@ video {
 
 .mt-\[5px\]{
   margin-top: 5px;
-}
-
-.mt-\[10px\]{
-  margin-top: 10px;
 }
 
 .block{
@@ -1151,6 +1151,10 @@ video {
   width: 437.5px;
 }
 
+.w-\[455\.58px\]{
+  width: 455.58px;
+}
+
 .w-\[50\%\]{
   width: 50%;
 }
@@ -1213,6 +1217,10 @@ video {
 
 .w-\[8\.33333333\%\]{
   width: 8.33333333%;
+}
+
+.w-\[92\.14px\]{
+  width: 92.14px;
 }
 
 .w-\[calc\(100\%\+100px\)\]{
@@ -1309,6 +1317,10 @@ video {
   list-style-type: disc;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1331,10 +1343,6 @@ video {
 
 .flex-col-reverse{
   flex-direction: column-reverse;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-end{
@@ -1361,6 +1369,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-\[10px\]{
+  gap: 10px;
+}
+
 .gap-\[10px_20px\]{
   gap: 10px 20px;
 }
@@ -1375,14 +1387,6 @@ video {
 
 .gap-\[3px\]{
   gap: 3px;
-}
-
-.gap-\[10px\]{
-  gap: 10px;
-}
-
-.gap-0{
-  gap: 0px;
 }
 
 .gap-x-\[20px\]{
@@ -1584,14 +1588,14 @@ video {
   border-color: rgb(0 122 255 / var(--tw-border-opacity));
 }
 
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#007AFF1A\]{
@@ -1694,8 +1698,16 @@ video {
   padding: 0px;
 }
 
+.p-\[10px_15px\]{
+  padding: 10px 15px;
+}
+
 .p-\[15px\]{
   padding: 15px;
+}
+
+.p-\[15px_20px\]{
+  padding: 15px 20px;
 }
 
 .p-\[20px\]{
@@ -1708,14 +1720,6 @@ video {
 
 .p-\[50px\]{
   padding: 50px;
-}
-
-.p-\[8px_15px\]{
-  padding: 8px 15px;
-}
-
-.p-\[10px_15px\]{
-  padding: 10px 15px;
 }
 
 .px-20{
@@ -1820,6 +1824,10 @@ video {
   padding-bottom: 20px;
 }
 
+.pb-\[25px\]{
+  padding-bottom: 25px;
+}
+
 .pb-\[30px\]{
   padding-bottom: 30px;
 }
@@ -1830,6 +1838,10 @@ video {
 
 .pl-10{
   padding-left: 2.5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
 }
 
 .pl-\[10px\]{
@@ -1870,14 +1882,6 @@ video {
 
 .pt-\[5px\]{
   padding-top: 5px;
-}
-
-.pl-5{
-  padding-left: 1.25rem;
-}
-
-.pb-\[25px\]{
-  padding-bottom: 25px;
 }
 
 .text-left{
@@ -1974,6 +1978,10 @@ video {
 
 .leading-\[15px\]{
   line-height: 15px;
+}
+
+.leading-\[21\.5px\]{
+  line-height: 21.5px;
 }
 
 .leading-\[21px\]{
@@ -2202,10 +2210,6 @@ video {
     width: 100%;
   }
 
-  .sm\:w-1\/2{
-    width: 50%;
-  }
-
   .sm\:flex-col{
     flex-direction: column;
   }
@@ -2232,10 +2236,6 @@ video {
 
   .sm\:overflow-auto{
     overflow: auto;
-  }
-
-  .sm\:border-none{
-    border-style: none;
   }
 
   .sm\:p-\[20px\]{
@@ -2475,6 +2475,10 @@ video {
     width: 42%;
   }
 
+  .lmd\:w-\[435px\]{
+    width: 435px;
+  }
+
   .lmd\:w-\[57\.5\%\]{
     width: 57.5%;
   }
@@ -2517,6 +2521,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lmd\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lmd\:flex-row{
     flex-direction: row;
   }
@@ -2537,8 +2545,12 @@ video {
     gap: 0px;
   }
 
-  .lmd\:gap-\[10px\]{
-    gap: 10px;
+  .lmd\:gap-\[10px_20px\]{
+    gap: 10px 20px;
+  }
+
+  .lmd\:gap-\[15px\]{
+    gap: 15px;
   }
 
   .lmd\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -2902,6 +2914,10 @@ video {
     width: 42%;
   }
 
+  .print\:w-\[435px\]{
+    width: 435px;
+  }
+
   .print\:w-\[50\%\]{
     width: 50%;
   }
@@ -2944,6 +2960,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .print\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .print\:flex-row{
     flex-direction: row;
   }
@@ -2964,8 +2984,12 @@ video {
     justify-content: space-between;
   }
 
-  .print\:gap-0{
-    gap: 0px;
+  .print\:gap-\[10px_20px\]{
+    gap: 10px 20px;
+  }
+
+  .print\:gap-\[15px\]{
+    gap: 15px;
   }
 
   .print\:space-y-0 > :not([hidden]) ~ :not([hidden]){
