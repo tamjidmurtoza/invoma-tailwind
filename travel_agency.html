@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop Invoice</title>
+    <title>Travel Agency Invoice</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,27 +16,18 @@
   </head>
   <body>
     <div
-      class="bg-custom-bg w-full leading-[1.5em] min-h-screen lmd:h-screen overflow-auto"
+      class="bg-custom-bg w-full leading-[1.5em] min-h-screen lmd:h-screen overflow-auto font-inter"
     >
       <div
-        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full lmd:mx-[50px] px-[15px] print:m-0"
       >
-        <div class="relative lg:space-y-0">
+        <div class="relative lg:space-y-0 pb-[20px]">
           <div
             id="invoice"
-            class="mx-auto lg:px-[50px] lg:pt-[50px] md:mb-[30px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
+            class="mx-auto lg:p-[50px] md:mb-[15px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0"
           >
             <div
-              class="absolute h-[200px] opacity-[0.04] left-1/2 transform -translate-x-1/2 top-[40px]"
-            >
-              <img
-                class="max-h-[100%]"
-                src="/assets/images/img/coffy_shop_img.svg"
-                alt="coffee_image"
-              />
-            </div>
-            <div
-              class="lmd:flex md:flex lmd:flex-row flex-col lmd:justify-between lmd:items-center gap-[20px] lmd:gap-0 lmd:h-[50px] print:flex-row print:justify-between print:items-center"
+              class="lg:flex md:flex lg:flex-row md:flex-row sm:flex-col lg:justify-between lg:items-center md:justify-between md:items-center sm:justify-start sm:items-start mb-[20px] lg:h-[50px]"
             >
               <img
                 class="text-[#666] w-[65px]"
@@ -48,15 +39,14 @@
                 >INVOICE</span
               >
             </div>
-
             <div
               class="flex lg:flex-row md:flex-row justify-between items-center h-[21px]"
             >
               <div
-                class="lg:min-h-[18px] md:h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 md:items-center hidden lmd:block print:block"
+                class="hidden lmd:block lg:min-h-[18px] md:h-[18px] sm:min-h-[5px] rounded-[25.6px] flex-1 bg-custom-bg md:items-center my_print print:block"
               ></div>
               <div
-                class="text-[14px] font-inter flex lmd:ml-[20px] m-0 leading-[24px] lmd:mt-0 mt-[20px] print:mt-0"
+                class="text-[14px] font-inter flex lmd:ml-[20px] m-0 leading-[24px] print:ml-[20px]"
               >
                 <p
                   class="text-[#666] flex items-center leading-[1.5em] mr-[20px]"
@@ -65,9 +55,13 @@
                   <b class="text-custom-black font-bold ml-[4px]">#LL93784</b>
                 </p>
 
-                <p class="text-[#666] flex items-center">
-                  Date:
+                <p class="text-[#666] flex items-center mr-[20px]">
+                  Invoice Date:
                   <b class="text-custom-black font-bold ml-[4px]">01.07.2022</b>
+                </p>
+                <p class="text-[#666] flex items-center">
+                  Journy Date:
+                  <b class="text-custom-black font-bold ml-[4px]">01.10.2022</b>
                 </p>
               </div>
             </div>
@@ -108,32 +102,31 @@
                 </p>
               </div>
             </div>
-            <!-- table  -->
+            <!-- table section  -->
             <div
-              class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px] border-y-[1px]"
+              class="border-[1px] border-[#dbdfea] overflow-hidden rounded-[6px]"
             >
-              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
-                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
-                  <thead class="text-[14px] h-[42.19px] bg-custom-bg my_print">
-                    <tr>
+              <div class="lg:w-full leading-[21px]">
+                <table class="font-inter w-full">
+                  <thead class="bg-custom-bg text-[14px] my_print h-[42.19px]">
+                    <tr class="">
                       <th
-                        class="font-semibold px-[15px] py-[10px] text-left w-[437.5px] leading-[21px] font-inter"
+                        class="w-[41%] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Item
                       </th>
-
                       <th
-                        class="w-[125px] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[25%] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Price
                       </th>
                       <th
-                        class="w-[62px] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                        class="w-[8%] text-custom-black font-semibold px-[15px] py-[10px] text-left leading-[21px]"
                       >
                         Qty
                       </th>
                       <th
-                        class="w-[124.69px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                        class="w-[25%] text-custom-black font-semibold px-[15px] py-[10px] text-end leading-[21px]"
                       >
                         Total
                       </th>
@@ -141,151 +134,139 @@
                   </thead>
                   <tbody class="text-[14px]">
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Colombia Dark Roast
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Full Board and Lodging
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$40</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $80
+                      <td class="w-[16%] px-[15px] py-[10px]">$3000</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">
+                        $3000
                       </td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Swiss Water Decaf
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Rental Car 1 Week
+                        <p class="text-[#b5b5b5] text-[13px]">
+                          SUV with $75 per week charges
+                        </p>
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$35</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $70
+                      <td class="w-[16%] px-[15px] py-[10px]">$525</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">$525</td>
+                    </tr>
+                    <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Tour, Concert Tickets and Other Rentals
+                        <p class="text-[#b5b5b5] text-[13px]">
+                          A package for 6 individuals $350 each
+                        </p>
+                      </td>
+                      <td class="w-[16%] px-[15px] py-[10px]">$350</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">6</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">
+                        $3950
                       </td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Double Espresso
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Air Transport
+                        <p class="text-[#b5b5b5] text-[13px]">
+                          5 return tickets
+                        </p>
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$60</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]"></td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $60
+                      <td class="w-[16%] px-[15px] py-[10px]">$790</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">5</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">
+                        $3000
                       </td>
                     </tr>
                     <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
-                      <td
-                        class="px-[15px] py-[10px] leading-[22px] text-custom-black"
-                      >
-                        Coffee Mug
+                      <td class="w-[33.33%] px-[15px] py-[10px]">
+                        Other Fees
+                        <p class="text-[#b5b5b5] text-[13px]">
+                          Food, refreshments and other arrangements
+                        </p>
                       </td>
-
-                      <td class="px-[15px] py-[10px] leading-[22px]">$25</td>
-                      <td class="px-[15px] py-[10px] leading-[22px]">2</td>
-                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
-                        $50
+                      <td class="w-[16%] px-[15px] py-[10px]">$2000</td>
+                      <td class="w-[8%] px-[15px] py-[10px]">1</td>
+                      <td class="w-[16%] px-[15px] py-[10px] text-end">
+                        $2000
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <!-- footer section  -->
+
             <div
-              class="w-full flex flex-col-reverse lmd:flex-row lmd:justify-between leading-normal font-inter mb-[15px] gap-[15px] print:flex-row"
+              class="w-full flex flex-col-reverse lmd:flex-row lg:justify-between leading-normal font-inter mb-[30px] gap-[15px] print:flex-row"
             >
               <!-- left side  -->
-              <div class="w-[58%] text-[14px] px-[15px] py-[10px]">
+              <div
+                class="w-[435px] flex-none text-[14px] px-[15px] py-[10px] print:w-[50%]"
+              >
                 <p class="mb-[2px]">
-                  <b class="text-custom-black font-bold">Payment info:</b>
+                  <b class="text-custom-black font-bold">Terms & Conditions:</b>
                 </p>
-                <p class="text-[#666] text-[14px]">
-                  Credit Card - 236***********928 <br />Amount: $272
-                </p>
+                <ol class="m-0 list-decimal text-[#666] text-[14px] pl-[20px]">
+                  <li>Payment has to done with in 10 days.</li>
+                  <li>
+                    If customer cancel tripe money will refunded in 10 days.
+                  </li>
+                </ol>
               </div>
               <!-- right side  -->
               <div
-                class="text-[14px] lg:w-[42%] md:w-full text-right print:w-[42%] font-inter"
+                class="text-[14px] w-full lmd:w-[315px] text-right print:w-[315px]"
               >
-                <table class="mb-[15px] bg-custom-bg my_print">
+                <table class="mt-[-1px] w-full">
                   <tbody class="">
                     <tr class="font-bold text-custom-black text-left">
-                      <td class="lg:w-[25%] md:w-full px-[15px] pt-[10px]">
+                      <td class="w-[25%] px-[15px] pb-[10px] pt-[10px]">
                         Subtoal
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px]"
+                        class="w-[25%] text-right px-[15px] pb-[10px] pt-[10px]"
                       >
-                        $260
+                        $11,575
                       </td>
                     </tr>
-
-                    <tr class="text-custom-black text-left">
-                      <td class="lg:w-[25%] md:w-full px-[15px] pt-[10px]">
-                        Discount <span class="text-[#b5b5b5]"> (0%) </span>
+                    <tr class="">
+                      <td
+                        class="text-[14px] text-custom-black text-left px-[15px] pb-[10px] h-[32.5px]"
+                      >
+                        Discount <span class="text-[#b5b5b5]"> (10%)</span>
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pt-[10px] text-[red]"
+                        class="text-right leading-normal px-[15px] h-[32.5px]"
                       >
-                        -$0
+                        -$1157
                       </td>
                     </tr>
-
-                    <tr class="text-custom-black text-left">
+                    <tr class="">
                       <td
-                        class="lg:w-[25%] md:w-full px-[15px] pb-[10px] pt-[10px]"
+                        class="text-[14px] text-custom-black text-left px-[15px] pb-[10px] h-[32.5px]"
                       >
-                        Tax <span class="text-[#b5b5b5]"> (5%) </span>
+                        Tax <span class="text-[#b5b5b5]">(5%)</span>
                       </td>
                       <td
-                        class="lg:w-[25%] md:w-full text-right px-[15px] pb-[10px] pt-[10px]"
+                        class="text-right leading-normal px-[15px] h-[32.5px]"
                       >
-                        +$12
+                        $0
                       </td>
                     </tr>
                     <tr
-                      class="text-custom-black font-bold text-[16px] border-y"
+                      class="border-y border-[#dbdfea] text-custom-black font-bold text-[16px]"
                     >
-                      <td
-                        class="lg:w-[25%] md:w-full text-left px-[15px] py-[10px] text-[16px] !important"
-                      >
-                        Grand Total
-                      </td>
-                      <td
-                        class="lg:w-[25%] md:w-full px-[15px] py-[10px] text-[16px] !important"
-                      >
-                        $272
-                      </td>
+                      <td class="text-left px-[15px] py-[10px]">Grand Total</td>
+                      <td class="px-[15px] py-[10px]">$10,400</td>
                     </tr>
                   </tbody>
                 </table>
-                <hr class="lmd:hidden print:hidden" />
               </div>
             </div>
-            <!-- note section  -->
 
-            <div
-              class="py-[20px] border-t-[1px] overflow-hidden border-[#dbdfea] font-inter text-center"
-            >
-              <p class="mb-[5px] leading-[21px]">
-                <b class="text-custom-black font-bold text-[14px]">
-                  Terms & Conditions:
-                </b>
-              </p>
-              <ul class="pl-[20px] text-[#666] text-[14px]">
-                <li class="mb-[5px] leading-[21px]">
-                  Your use of the Website shall be deemed to constitute your
-                  understanding and approval of, and agreement to be bound by,
-                  the Privacy Policy and you consent to the collection.
-                </li>
-              </ul>
-            </div>
+            <!-- note section  -->
           </div>
 
           <div
