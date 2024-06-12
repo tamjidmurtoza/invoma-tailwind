@@ -712,6 +712,10 @@ video {
   top: 40px;
 }
 
+.left-\[-50px\]{
+  left: -50px;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -757,6 +761,11 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-\[20px\]{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .mb-0{
@@ -907,8 +916,8 @@ video {
   margin-top: 5px;
 }
 
-.mb-\[22px\]{
-  margin-bottom: 22px;
+.mt-\[50px\]{
+  margin-top: 50px;
 }
 
 .block{
@@ -1207,6 +1216,10 @@ video {
   width: 17px;
 }
 
+.w-\[187\.02px\]{
+  width: 187.02px;
+}
+
 .w-\[187\.5px\]{
   width: 187.5px;
 }
@@ -1239,8 +1252,16 @@ video {
   width: 30%;
 }
 
+.w-\[311\.66px\]{
+  width: 311.66px;
+}
+
 .w-\[311\.67px\]{
   width: 311.67px;
+}
+
+.w-\[312\.5px\]{
+  width: 312.5px;
 }
 
 .w-\[315px\]{
@@ -1367,16 +1388,20 @@ video {
   width: 100%;
 }
 
-.w-\[311\.66px\]{
-  width: 311.66px;
+.w-\[123\.45px\]{
+  width: 123.45px;
 }
 
-.w-\[187\.02px\]{
-  width: 187.02px;
+.w-\[123\.47px\]{
+  width: 123.47px;
 }
 
-.w-\[312\.5px\]{
-  width: 312.5px;
+.w-\[429\.75px\]{
+  width: 429.75px;
+}
+
+.w-\[71\.33px\]{
+  width: 71.33px;
 }
 
 .max-w-\[100\%\]{
@@ -2172,22 +2197,6 @@ video {
   line-height: 1.5;
 }
 
-.leading-\[20px\]{
-  line-height: 20px;
-}
-
-.leading-\[23px\]{
-  line-height: 23px;
-}
-
-.leading-\[19px\]{
-  line-height: 19px;
-}
-
-.leading-\[12px\]{
-  line-height: 12px;
-}
-
 .tracking-\[18px\]{
   letter-spacing: 18px;
 }
@@ -2563,10 +2572,6 @@ video {
     margin-top: 30px;
   }
 
-  .md\:mb-\[50px\]{
-    margin-bottom: 50px;
-  }
-
   .md\:flex{
     display: flex;
   }
@@ -2663,6 +2668,10 @@ video {
 @media (min-width: 768px){
   .lmd\:right-\[-60px\]{
     right: -60px;
+  }
+
+  .lmd\:left-\[-100px\]{
+    left: -100px;
   }
 
   .lmd\:mx-\[15px\]{
@@ -2921,10 +2930,6 @@ video {
     margin-top: 0px;
   }
 
-  .lg\:mb-\[50px\]{
-    margin-bottom: 50px;
-  }
-
   .lg\:block{
     display: block;
   }
@@ -3127,6 +3132,10 @@ video {
 @media print{
   .print\:right-\[-60px\]{
     right: -60px;
+  }
+
+  .print\:left-\[-100px\]{
+    left: -100px;
   }
 
   .print\:m-0{
