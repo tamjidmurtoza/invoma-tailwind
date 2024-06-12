@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const invoiceElement = document.getElementById("invoice");
 
       // Convert the HTML element to a PDF
-      html2pdf().from(invoiceElement).save();
-    });
+      html2pdf().set({filename: "invoice"}).from(invoiceElement).save();
+    });0
 });
