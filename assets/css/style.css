@@ -1007,6 +1007,10 @@ video {
   height: 100px;
 }
 
+.h-\[109px\]{
+  height: 109px;
+}
+
 .h-\[10px\]{
   height: 10px;
 }
@@ -1133,18 +1137,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[125px\]{
-  height: 125px;
-}
-
-.h-\[55px\]{
-  height: 55px;
-}
-
-.h-\[109px\]{
-  height: 109px;
 }
 
 .max-h-\[100\%\]{
@@ -1315,8 +1307,16 @@ video {
   width: 435px;
 }
 
+.w-\[436\.34px\]{
+  width: 436.34px;
+}
+
 .w-\[437\.5px\]{
   width: 437.5px;
+}
+
+.w-\[450px\]{
+  width: 450px;
 }
 
 .w-\[455\.58px\]{
@@ -1363,6 +1363,10 @@ video {
   width: 62.33px;
 }
 
+.w-\[62\.5px\]{
+  width: 62.5px;
+}
+
 .w-\[62px\]{
   width: 62px;
 }
@@ -1407,14 +1411,6 @@ video {
   width: 100%;
 }
 
-.w-\[436\.34px\]{
-  width: 436.34px;
-}
-
-.w-\[450px\]{
-  width: 450px;
-}
-
 .max-w-\[100\%\]{
   max-width: 100%;
 }
@@ -1429,6 +1425,10 @@ video {
 
 .flex-none{
   flex: none;
+}
+
+.table-fixed{
+  table-layout: fixed;
 }
 
 .border-collapse{
@@ -1577,10 +1577,6 @@ video {
   gap: 3px;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-x-\[20px\]{
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -1704,11 +1700,6 @@ video {
   border-bottom-width: 1px;
 }
 
-.border-x{
-  border-left-width: 1px;
-  border-right-width: 1px;
-}
-
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1801,6 +1792,10 @@ video {
 
 .bg-\[\#007AFF1A\]{
   background-color: #007AFF1A;
+}
+
+.bg-\[\#007AFF26\]{
+  background-color: #007AFF26;
 }
 
 .bg-\[\#007aff1a\]{
@@ -1929,10 +1924,6 @@ video {
 
 .p-\[50px\]{
   padding: 50px;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .px-20{
@@ -2205,6 +2196,10 @@ video {
   line-height: 15px;
 }
 
+.leading-\[17px\]{
+  line-height: 17px;
+}
+
 .leading-\[21\.5px\]{
   line-height: 21.5px;
 }
@@ -2223,14 +2218,6 @@ video {
 
 .leading-normal{
   line-height: 1.5;
-}
-
-.leading-\[20px\]{
-  line-height: 20px;
-}
-
-.leading-\[17px\]{
-  line-height: 17px;
 }
 
 .tracking-\[18px\]{
@@ -2412,6 +2399,11 @@ video {
 
   .custom-blue-print {
     background-color: #007aff !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .custom-blue-text-print {
+    color: #007aff !important;
     -webkit-print-color-adjust: exact !important;
   }
 
@@ -3292,6 +3284,10 @@ video {
     min-width: 100%;
   }
 
+  .print\:table-auto{
+    table-layout: auto;
+  }
+
   .print\:-skew-x-35{
     --tw-skew-x: -35deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3389,4 +3385,3 @@ video {
     text-align: right;
   }
 }
-  
