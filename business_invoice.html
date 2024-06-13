@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cleaning Service Invoice</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div
+      class="bg-custom-bg w-full leading-[1.5em] min-h-screen lmd:h-screen overflow-auto"
+    >
+      <div
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[50px] px-[15px] print:m-0"
+      >
+        <div class="relative lg:space-y-0 pb-[20px]">
+          <div
+            id="invoice"
+            class="mx-auto lg:p-[50px] md:mb-[30px] md:px-[20px] md:py-[30px] rounded-[10px] bg-custom-white print:p-0 print:m-0 sm:p-[20px]"
+          >
+            <div
+              class="lg:flex md:flex lg:flex-row md:flex-row sm:flex-col lg:justify-between lg:items-center md:justify-between md:items-center sm:justify-start sm:items-start mb-[20px] lmd:h-[60px] print:h-[60px]"
+            >
+              <img
+                class="text-[#666] w-[78.98px]"
+                src="assets/images/img/logo.svg"
+                alt="logo"
+              />
+              <div
+                class="lmd:text-right leading-[20px] font-inter mt-[10px] lmd:mt-0 print:mt-0"
+              >
+                <b class="text-[20px] font-medium text-custom-black">
+                  Laralink Ltd
+                </b>
+                <p class="text-[12px] text-custom-gray leading-[20px]">
+                  86-90 Paul Street, London
+                  <br />
+                  England EC2A 4NE
+                </p>
+              </div>
+            </div>
+            <hr class="mb-[8px]" />
+            <div
+              class="flex flex-col lmd:flex-row gap-[10px] justify-between lmd:items-center text-[14px] font-inter m-0 leading-[21px] print:flex-row"
+            >
+              <p class="text-[#666] font-medium leading-[21px]">
+                Airway Bill No:
+                <br />
+                <b class="text-custom-black">D0129888</b>
+              </p>
+
+              <p class="text-[#666] font-medium leading-[21px]">
+                Invoice No:
+                <br />
+                <b class="text-custom-black">LL098342</b>
+              </p>
+
+              <p class="text-[#666] font-medium leading-[21px]">
+                Invoice Date:
+                <br />
+                <b class="text-custom-black">12 July 2022</b>
+              </p>
+
+              <p class="text-[#666] font-medium leading-[21px]">
+                Date of Export:
+                <br />
+                <b class="text-custom-black">15 August 2022</b>
+              </p>
+            </div>
+            <hr class="mt-[8px] mb-[20px]" />
+
+            <div
+              class="flex flex-col lmd:flex-row gap-[15px] justify-between mb-[20px] leading-[22px] font-inter print:flex-row"
+            >
+              <div class="w-full text-[14px] leading-[24px]">
+                <p class="mb-[5px] leading-[20px]">
+                  <b class="text-custom-black"> Exporter / Shipper:</b>
+                </p>
+                <ul class="font-inter">
+                  <li>
+                    <span class="text-custom-gray">Company Name: </span>
+                    <span class="text-custom-black">ABC Company</span>
+                  </li>
+                  <li class="flex">
+                    <span class="text-custom-gray mr-[3px]">Address: </span>
+                    <div class="text-custom-black">
+                      <span class="block"> 84 Spilman Street</span>
+                      <span class="block"> London, United Kingdom</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Contact Name: </span>
+                    <span class="text-custom-black"> Jhon Doe</span>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Phone Number: </span>
+                    <span class="text-custom-black"> 543-123-4329</span>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Email: </span>
+                    <span class="text-custom-black"> abc@gmail.com</span>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Country of Export: </span>
+                    <span class="text-custom-black"> United Kingdom</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-start w-full text-[14px] leading-[24px]">
+                <p class="mb-[5px] leading-[20px]">
+                  <b class="text-custom-black"> Ship To / Cosignee:</b>
+                </p>
+                <ul class="font-inter leading-[25px]">
+                  <li>
+                    <span class="text-custom-gray">Company Name: </span>
+                    <span class="text-custom-black">Laralink Ltd</span>
+                  </li>
+                  <li class="flex">
+                    <span class="text-custom-gray mr-[3px]">Address:</span>
+                    <div class="text-custom-black">
+                      <span class="block"> 86-90 Paul Street, London </span>
+                      <span class="block">England EC2A 4NE</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Contact Name: </span>
+                    <span class="text-custom-black"> Lowell H. Dominguez</span>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Phone Number: </span>
+                    <span class="text-custom-black"> 324-123-2341</span>
+                  </li>
+                  <li>
+                    <span class="text-custom-gray">Email: </span>
+                    <span class="text-custom-black">
+                      laralink007@gmail.com</span
+                    >
+                  </li>
+                  <li>
+                    <span class="text-custom-gray"
+                      >Country of Destination:
+                    </span>
+                    <span class="text-custom-black"> United Kingdom</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- table  -->
+            <div
+              class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px] border-[1px]"
+            >
+              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
+                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
+                  <thead class="text-[14px] h-[42.19px] bg-custom-bg my_print">
+                    <tr>
+                      <th
+                        class="font-semibold px-[15px] py-[10px] text-left w-[407.78px] leading-[21px] font-inter"
+                      >
+                        Item
+                      </th>
+
+                      <th
+                        class="w-[124.66px] font-semibold px-[15px] py-[10px] text-left leading-[21px]"
+                      >
+                        Price
+                      </th>
+
+                      <th
+                        class="w-[62.33px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                      >
+                        Qty
+                      </th>
+                      <th
+                        class="w-[167.24px] font-semibold px-[15px] py-[10px] text-end leading-[21px]"
+                      >
+                        Total
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[14px]">
+                    <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                      <td class="px-[15px] py-[10px] leading-[22px]">
+                        Laser Mouse
+                      </td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">$150</td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">12</td>
+                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
+                        $1800
+                      </td>
+                    </tr>
+
+                    <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                      <td class="px-[15px] py-[10px] leading-[22px]">
+                        Dual XL Monitors
+                      </td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">$300</td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">15</td>
+                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
+                        $4500
+                      </td>
+                    </tr>
+
+                    <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                      <td class="px-[15px] py-[10px] leading-[22px]">
+                        Multi-jet Printer
+                      </td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">$350</td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">05</td>
+                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
+                        $1750
+                      </td>
+                    </tr>
+
+                    <tr class="border-t-[1px] border-[#dbdfea] text-[#666]">
+                      <td class="px-[15px] py-[10px] leading-[22px]">
+                        USB Cable
+                      </td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">$10</td>
+                      <td class="px-[15px] py-[10px] leading-[22px]">100</td>
+                      <td class="px-[15px] py-[10px] text-end leading-[22px]">
+                        $1000
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- footer section  -->
+            <div
+              class="flex flex-col-reverse lmd:flex-row justify-between leading-[21px] font-inter mb-[30px] lmd:gap-[15px] print:flex-row print:gap-[15px]"
+            >
+              <!-- left side  -->
+
+              <div
+                class="w-full lmd:w-[435px] flex-none text-[14px] px-[15px] py-[10px] print:w-[435px]"
+              >
+                <p class="text-[14px] text-custom-gray mb-[2px]">
+                  Total Weight:
+                  <b class="text-custom-black">40kg</b>
+                </p>
+                <p class="text-[14px] text-custom-gray mb-[2px]">
+                  Shipment Terms:
+                  <b class="text-custom-black"> DDU </b>
+                </p>
+              </div>
+              <!-- right side  -->
+              <div class="text-[14px] w-full lmd:w-[315px] text-right">
+                <table class="mt-[-1px] w-full">
+                  <tbody class="">
+                    <tr class="font-bold text-custom-black text-left">
+                      <td
+                        class="w-[25%] px-[15px] pb-[10px] pt-[10px] print:px-[8px]"
+                      >
+                        Subtoal
+                      </td>
+                      <td
+                        class="w-[25%] text-right px-[15px] pb-[10px] pt-[10px] print:px-[8px]"
+                      >
+                        $1650
+                      </td>
+                    </tr>
+
+                    <tr class="">
+                      <td
+                        class="text-[14px] text-custom-black text-left px-[15px] pb-[10px] h-[32.5px] print:px-[8px]"
+                      >
+                        Tax <span class="text-[#b5b5b5]">(5%)</span>
+                      </td>
+                      <td
+                        class="text-[14px] text-custom-black text-right px-[15px] pb-[10px] h-[32.5px] print:px-[8px]"
+                      >
+                        +$905
+                      </td>
+                    </tr>
+
+                    <tr
+                      class="border-y border-[#dbdfea] text-custom-black font-bold text-[16px]"
+                    >
+                      <td class="text-left px-[15px] py-[10px] print:px-[8px]">
+                        Grand Total
+                      </td>
+                      <td class="px-[15px] py-[10px] print:px-[8px]">$9955</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div
+              class="flex leading-[21px] md:justify-center print:justify-end"
+            >
+              <div
+                class="lg:w-[58%] px-[15px] py-[10px] flex leading-[21px]"
+              ></div>
+              <div class="w-[42%] leading-[21px]">
+                <div class="items-center leading-[21px]">
+                  <img
+                    class="max-h-[45px] flex justify-center mx-auto"
+                    src="assets/images/img/sign.svg"
+                    alt="Sign"
+                  />
+                  <p
+                    class="text-[#b5b5b5] leading-[21px] text-[14px] text-center"
+                  >
+                    Jhon Donate
+                  </p>
+                  <p class="text-[#111] text-[16px] leading-[21px] text-center">
+                    Accounts Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
+          >
+            <a
+              href="javascript:window.print()"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+            >
+              <span
+                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <rect
+                    x="128"
+                    y="240"
+                    width="256"
+                    height="208"
+                    rx="24.32"
+                    ry="24.32"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></rect>
+                  <path
+                    d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="24"
+                  ></path>
+                  <circle cx="392" cy="184" r="24" fill="currentColor"></circle>
+                </svg>
+              </span>
+
+              <p
+                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+              >
+                <span
+                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  >Print</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+
+            <a
+              id="downloadPdfButton"
+              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933]"
+            >
+              <span
+                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[24px]"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  ></path>
+                </svg>
+              </span>
+
+              <p
+                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+              >
+                <span
+                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  >Download</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
