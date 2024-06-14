@@ -136,7 +136,7 @@
                   INVOICE
                 </div>
                 <div
-                  class="bg-[#f5f6fa] py-[12px] px-[20px] rounded-[10px] grid grid-cols-3 gap-x-[20px] gap-y-[10px] justify-center lg:w-[525px] border-[1px] my_print"
+                  class="bg-[#f5f6fa] py-[12px] px-[20px] rounded-[10px] grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-[20px] gap-y-[10px] lg:justify-center lg:w-[525px] border-[1px] my_print"
                 >
                   <div>
                     <span class="leading-[21px] text-[14px] text-custom-gray"
@@ -177,10 +177,10 @@
 
             <!-- table  -->
             <div
-              class="rounded-[6px] border-[1px] border-[#dbdfea] overflow-hidden md:mt-[30px] lg:mt-0"
+              class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px] border rounded-md"
             >
-              <div class="lg:w-full leading-[21px]">
-                <table class="font-inter w-full">
+              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
+                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
                   <thead class="text-[14px] h-[42.19px] text-[#111]">
                     <tr class="">
                       <th
@@ -304,7 +304,7 @@
               <div
                 class="text-[14px] lg:w-[42%] md:w-full text-right print:w-[42%]"
               >
-                <table class="mt-[-1px] mb-[15px]">
+                <table class="mt-[-1px] mb-[15px] w-full">
                   <tbody class="">
                     <tr class="font-bold text-custom-black text-left">
                       <td
@@ -366,10 +366,10 @@
             <hr class="lg:hidden md:mb-[20px] print:hidden" />
 
             <div
-              class="flex leading-[21px] md:justify-center print:justify-end"
+              class="flex leading-[21px] sm:justify-center md:justify-center print:justify-end sm:mt-[30px] md:mt-0 lg:mt-0"
             >
               <div
-                class="lg:w-[58%] px-[15px] py-[10px] flex leading-[21px]"
+                class="lg:w-[58%] px-[15px] py-[10px] md:flex lg:flex leading-[21px] sm:hidden"
               ></div>
               <div class="w-[42%] leading-[21px]">
                 <div class="items-center leading-[21px]">
@@ -406,7 +406,7 @@
                   signature and seal.
                 </p>
               </div>
-              <div>
+              <div class="hidden md:block lg:block">
                 <img
                   class="h-[60px]"
                   src="assets/images/img/logo.svg"
