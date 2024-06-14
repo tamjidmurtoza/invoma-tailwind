@@ -2552,6 +2552,11 @@ video {
     margin-right: 10px;
   }
 
+  .sm\:mx-\[5px\]{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   .sm\:mb-\[10px\]{
     margin-bottom: 10px;
   }
@@ -2642,6 +2647,20 @@ video {
 
   .sm\:p-\[10px\]{
     padding: 10px;
+  }
+
+  .sm\:px-\[10px\]{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sm\:py-\[20px\]{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .sm\:pt-\[20px\]{
+    padding-top: 20px;
   }
 
   .sm\:text-left{
