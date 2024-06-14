@@ -2611,6 +2611,10 @@ video {
     width: 100%;
   }
 
+  .sm\:w-\[60\%\]{
+    width: 60%;
+  }
+
   .sm\:flex-col{
     flex-direction: column;
   }
@@ -2751,12 +2755,20 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[42\%\]{
+    width: 42%;
+  }
+
   .md\:max-w-full{
     max-width: 100%;
   }
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -3208,6 +3220,10 @@ video {
   .lg\:translate-x-\[100\%\]{
     --tw-translate-x: 100%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
