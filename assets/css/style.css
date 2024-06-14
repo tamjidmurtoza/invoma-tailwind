@@ -2653,6 +2653,10 @@ video {
     padding-bottom: 20px;
   }
 
+  .sm\:pl-\[10px\]{
+    padding-left: 10px;
+  }
+
   .sm\:text-left{
     text-align: left;
   }
