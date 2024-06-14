@@ -728,10 +728,6 @@ video {
   margin: 0px;
 }
 
-.m-\[10px\]{
-  margin: 10px;
-}
-
 .mx-\[-50px\]{
   margin-left: -50px;
   margin-right: -50px;
@@ -879,8 +875,8 @@ video {
   margin-right: 20px;
 }
 
-.mr-\[5px\]{
-  margin-right: 5px;
+.mr-\[3px\]{
+  margin-right: 3px;
 }
 
 .mt-0{
@@ -925,14 +921,6 @@ video {
 
 .mt-\[8px\]{
   margin-top: 8px;
-}
-
-.mr-\[2px\]{
-  margin-right: 2px;
-}
-
-.mr-\[3px\]{
-  margin-right: 3px;
 }
 
 .block{
@@ -1119,6 +1107,10 @@ video {
   height: 59.98px;
 }
 
+.h-\[5px\]{
+  height: 5px;
+}
+
 .h-\[60px\]{
   height: 60px;
 }
@@ -1263,6 +1255,10 @@ video {
   width: 197.98px;
 }
 
+.w-\[229px\]{
+  width: 229px;
+}
+
 .w-\[249\.33px\]{
   width: 249.33px;
 }
@@ -1325,6 +1321,10 @@ video {
 
 .w-\[40\%\]{
   width: 40%;
+}
+
+.w-\[407\.78px\]{
+  width: 407.78px;
 }
 
 .w-\[41\%\]{
@@ -1445,10 +1445,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[407\.78px\]{
-  width: 407.78px;
 }
 
 .max-w-\[100\%\]{
@@ -1660,6 +1656,10 @@ video {
 
 .rounded-\[10px\]{
   border-radius: 10px;
+}
+
+.rounded-\[20px\]{
+  border-radius: 20px;
 }
 
 .rounded-\[25\.6px\]{
@@ -2273,16 +2273,12 @@ video {
   line-height: 24px;
 }
 
-.leading-normal{
-  line-height: 1.5;
-}
-
-.leading-\[23px\]{
-  line-height: 23px;
-}
-
 .leading-\[25px\]{
   line-height: 25px;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .tracking-\[18px\]{
@@ -2393,6 +2389,10 @@ video {
   text-decoration-line: line-through;
 }
 
+.opacity-100{
+  opacity: 1;
+}
+
 .opacity-\[0\.04\]{
   opacity: 0.04;
 }
@@ -2440,6 +2440,12 @@ video {
 
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2536,12 +2542,20 @@ video {
     margin-right: 20px;
   }
 
+  .sm\:mb-\[10px\]{
+    margin-bottom: 10px;
+  }
+
   .sm\:mb-\[14px\]{
     margin-bottom: 14px;
   }
 
   .sm\:mb-\[15px\]{
     margin-bottom: 15px;
+  }
+
+  .sm\:mb-\[20px\]{
+    margin-bottom: 20px;
   }
 
   .sm\:mt-\[10px\]{
@@ -2577,6 +2591,10 @@ video {
   }
 
   .sm\:w-full{
+    width: 100%;
+  }
+
+  .sm\:w-\[100\%\]{
     width: 100%;
   }
 
@@ -2834,6 +2852,10 @@ video {
     height: 140px;
   }
 
+  .lmd\:h-\[18px\]{
+    height: 18px;
+  }
+
   .lmd\:h-\[43px\]{
     height: 43px;
   }
@@ -2842,16 +2864,16 @@ video {
     height: 50px;
   }
 
+  .lmd\:h-\[60px\]{
+    height: 60px;
+  }
+
   .lmd\:h-\[90px\]{
     height: 90px;
   }
 
   .lmd\:h-screen{
     height: 100vh;
-  }
-
-  .lmd\:h-\[60px\]{
-    height: 60px;
   }
 
   .lmd\:w-\[315px\]{
@@ -2890,8 +2912,16 @@ video {
     width: 100%;
   }
 
+  .lmd\:w-\[25\%\]{
+    width: 25%;
+  }
+
   .lmd\:min-w-full{
     min-width: 100%;
+  }
+
+  .lmd\:flex-1{
+    flex: 1 1 0%;
   }
 
   .lmd\:-skew-x-35{
@@ -3018,8 +3048,20 @@ video {
     right: -20px;
   }
 
+  .lg\:bottom-\[10px\]{
+    bottom: 10px;
+  }
+
+  .lg\:left-\[53px\]{
+    left: 53px;
+  }
+
   .lg\:top-0{
     top: 0px;
+  }
+
+  .lg\:top-2{
+    top: 0.5rem;
   }
 
   .lg\:mx-auto{
@@ -3170,6 +3212,10 @@ video {
     border-top-right-radius: 0px;
   }
 
+  .lg\:bg-\[\#007AFF1A\]{
+    background-color: #007AFF1A;
+  }
+
   .lg\:bg-gray-800{
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -3231,6 +3277,10 @@ video {
     transition-property: opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+  }
+
+  .group:hover .lg\:group-hover\:visible{
+    visibility: visible;
   }
 
   .group:hover .lg\:group-hover\:opacity-100{
@@ -3317,12 +3367,16 @@ video {
     height: 140px;
   }
 
-  .print\:h-full{
-    height: 100%;
+  .print\:h-\[18px\]{
+    height: 18px;
   }
 
   .print\:h-\[60px\]{
     height: 60px;
+  }
+
+  .print\:h-full{
+    height: 100%;
   }
 
   .print\:w-\[315px\]{
@@ -3365,12 +3419,12 @@ video {
     width: 100%;
   }
 
-  .print\:w-\[350px\]{
-    width: 350px;
-  }
-
   .print\:min-w-full{
     min-width: 100%;
+  }
+
+  .print\:flex-1{
+    flex: 1 1 0%;
   }
 
   .print\:table-auto{
