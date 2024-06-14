@@ -763,6 +763,11 @@ video {
   margin-bottom: auto;
 }
 
+.mx-\[10px\]{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .mb-0{
   margin-bottom: 0px;
 }
@@ -2542,6 +2547,11 @@ video {
     margin-right: 20px;
   }
 
+  .sm\:mx-\[10px\]{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .sm\:mb-\[10px\]{
     margin-bottom: 10px;
   }
@@ -2630,6 +2640,10 @@ video {
     padding: 20px;
   }
 
+  .sm\:p-\[10px\]{
+    padding: 10px;
+  }
+
   .sm\:text-left{
     text-align: left;
   }
@@ -2653,6 +2667,11 @@ video {
   .md\:mx-\[50px\]{
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .md\:mx-\[30px\]{
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .md\:mb-0{
