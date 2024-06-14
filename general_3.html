@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>General Purpose Invoice</title>
-    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="bg-custom-bg w-full leading-[1.5em] font-inter">
+    <div
+      class="bg-custom-bg w-full leading-[1.5em] font-inter min-h-screen lmd:h-screen overflow-auto"
+    >
       <div
         class="pt-[30px] lg:max-w-[880px] lg:mx-auto md:max-w-full md:mx-[20px] sm:mx-[20px] lg:px-[15px] print:m-0 print:p-0"
       >
@@ -28,7 +30,7 @@
                     class="w-full flex items-center"
                     src="assets/images/img/logo.svg"
                     alt="logo"
-                  >
+                  />
                 </div>
               </div>
               <div
@@ -47,7 +49,7 @@
             </div>
 
             <div
-              class="h-[29px] relative flex items-center justify-between mb-[25px] leading-[22px]"
+              class="h-[29px] relative flex items-center justify-between mb-[25px] leading-[22px] md:mt-0 lg:mt-0 sm:mt-[20px]"
             >
               <div
                 class="relative z-1 leading-[22px] text-[#666] text-[14px] hidden lmd:block print:block"
@@ -58,19 +60,19 @@
                 Paypal, Western Union
               </div>
               <div
-                class="z-2 relative leading-[22px] text-[#fff] text-[14px] flex text-right custom-white-print ml-[15px]"
+                class="z-2 relative leading-[22px] text-[#fff] text-[14px] flex lg:flex-row md:flex-row sm:flex-col text-right custom-white-print lg:ml-[15px]"
               >
                 <p class="mr-[20px] leading-[22px] text-right p-0">
                   Invoice No:
                   <b> #LL93784 </b>
                 </p>
-                <p class="leading-[22px] text-right p-0">
+                <p class="leading-[22px] sm:text-left lmd:text-right p-0">
                   Date:
                   <b> 01.07.2022 </b>
                 </p>
               </div>
               <div
-                class="mr-0 h-[100%] absolute w-[100%] lmd:w-[57.5%] lmd:right-[-60px] overflow-hidden bg-[#007aff] leading-[22px] custom-blue-print lmd:transform lmd:skew-x-35 print:w-[57.5%] print:skew-x-35 print:right-[-60px]"
+                class="mr-0 md:h-[100%] lg:h-[100%] absolute w-[100%] lmd:w-[57.5%] lmd:right-[-60px] overflow-hidden bg-[#007aff] leading-[22px] custom-blue-print lmd:transform lmd:skew-x-35 print:w-[57.5%] print:skew-x-35 print:right-[-60px] sm:h-[50px] print:h-[100%]"
               ></div>
             </div>
 
@@ -89,14 +91,14 @@
                   class="text-[#666] leading-[21px] lg:mb-0 md:mb-0 sm:mb-[15px]"
                 >
                   Lowell H. Dominguez
-                  <br >
+                  <br />
                   84 Spilman Street, London
-                  <br >
+                  <br />
                   United Kingdom
-                  <br >lowell@gmail.com
+                  <br />lowell@gmail.com
                 </p>
               </div>
-              <div class="lg:text-right md:text-right sm:text-left">
+              <div class="lg:text-right md:text-right">
                 <p class="mb-[2px]">
                   <b class="text-custom-black font-bold leading-[21px]"
                     >Pay To:</b
@@ -104,11 +106,11 @@
                 </p>
                 <p class="text-[#666] leading-[21px]">
                   Laralink Ltd
-                  <br >
+                  <br />
                   86-90 Paul Street, London
-                  <br >
+                  <br />
                   England EC2A 4NE
-                  <br >demo@gmail.com
+                  <br />demo@gmail.com
                 </p>
               </div>
             </div>
@@ -240,7 +242,7 @@
 
                 <p class="leading-[21px] text-[#666] text-[14px]">
                   Credit Card - 236***********928
-                  <br >
+                  <br />
                   Amount: $1732
                 </p>
               </div>
@@ -291,24 +293,24 @@
                     </tr>
                   </tbody>
                 </table>
-                <hr class="lg:hidden print:hidden" >
+                <hr class="lg:hidden print:hidden" />
               </div>
             </div>
-            <hr class="lg:hidden md:mb-[20px] print:hidden" >
+            <hr class="lg:hidden md:mb-[20px] print:hidden" />
 
             <div
-              class="flex leading-[21px] md:justify-center print:justify-end"
+              class="flex leading-[21px] sm:justify-center md:justify-center print:justify-end sm:mt-[20px]"
             >
               <div
-                class="lg:w-[58%] px-[15px] py-[10px] flex leading-[21px]"
+                class="sm:hidden md:block lg:block lg:w-[58%] px-[15px] py-[10px] flex leading-[21px]"
               ></div>
               <div class="w-[42%] leading-[21px]">
                 <div class="items-center leading-[21px]">
                   <img
                     class="max-h-[45px] flex justify-center mx-auto"
                     src="assets/images/img/sign.svg"
-                    alt="Sign"
-                  >
+                    alt="svg"
+                  />
                   <p
                     class="text-[#b5b5b5] leading-[21px] text-[14px] text-center"
                   >
@@ -325,12 +327,12 @@
             <div
               class="pt-[15px] px-[20px] border-t-[1px] overflow-hidden border-[#dbdfea] font-inter mt-[30px] lg:text-center print:text-center"
             >
-              <p class="mb-[5px] leading-normal">
+              <p class="mb-[5px] leading-normal text-center">
                 <b class="text-custom-black font-bold text-[14px]">
                   Terms & Conditions:
                 </b>
               </p>
-              <ul class="lg:pl-[20px] text-[#666] text-[14px]">
+              <ul class="lg:pl-[20px] text-[#666] text-[14px] sm:text-center">
                 <li class="mb-[5px] leading-normal">
                   All claims relating to quantity or shipping errors shall be
                   waived by Buyer unless made in writing to Seller within thirty
@@ -341,14 +343,14 @@
           </div>
 
           <div
-            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white mt-[20px]"
+            class="sm:mt-[20px] flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center w-[225px] mx-auto bg-white mb-[20px]"
           >
             <a
               href="javascript:window.print()"
-              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33] sm:flex sm:justify-center sm:items-center"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#007AFF33] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden lg:bg-[#007AFF1A]"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full md:h-[42px] sm:h-[20px] text-[#007aff] flex justify-center items-center"
+                class="w-full h-[42px] text-[#007aff] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -386,15 +388,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:top-2 lg:left-[53px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Print</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden sm:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -407,10 +409,10 @@
 
             <a
               id="downloadPdfButton"
-              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
+              class="cursor-pointer transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#34C75933] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+                class="w-full h-[42px] text-[#34c759] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -429,15 +431,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:left-[53px] lg:bottom-[10px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Download</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden sm:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
