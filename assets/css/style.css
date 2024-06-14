@@ -1655,6 +1655,10 @@ video {
   white-space: nowrap;
 }
 
+.text-clip{
+  text-overflow: clip;
+}
+
 .break-all{
   word-break: break-all;
 }
@@ -2760,6 +2764,14 @@ video {
     height: 42px;
   }
 
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-\[88px\]{
+    height: 88px;
+  }
+
   .md\:w-\[229px\]{
     width: 229px;
   }
@@ -2841,6 +2853,10 @@ video {
 
   .md\:text-right{
     text-align: right;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 
   .md\:text-\[50px\]{
@@ -3359,6 +3375,10 @@ video {
 
   .lg\:text-right{
     text-align: right;
+  }
+
+  .lg\:text-start{
+    text-align: start;
   }
 
   .lg\:text-\[50px\]{
