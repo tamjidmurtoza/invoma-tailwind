@@ -763,11 +763,6 @@ video {
   margin-bottom: auto;
 }
 
-.mx-\[10px\]{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .mb-0{
   margin-bottom: 0px;
 }
@@ -1260,8 +1255,8 @@ video {
   width: 197.98px;
 }
 
-.w-\[229px\]{
-  width: 229px;
+.w-\[225px\]{
+  width: 225px;
 }
 
 .w-\[249\.33px\]{
@@ -1450,14 +1445,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[228px\]{
-  width: 228px;
-}
-
-.w-\[225px\]{
-  width: 225px;
 }
 
 .max-w-\[100\%\]{
@@ -2555,11 +2542,6 @@ video {
     margin-right: 20px;
   }
 
-  .sm\:mx-\[10px\]{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   .sm\:mx-\[5px\]{
     margin-left: 5px;
     margin-right: 5px;
@@ -2617,10 +2599,6 @@ video {
     width: 100%;
   }
 
-  .sm\:w-\[100\%\]{
-    width: 100%;
-  }
-
   .sm\:flex-col{
     flex-direction: column;
   }
@@ -2653,10 +2631,6 @@ video {
     padding: 20px;
   }
 
-  .sm\:p-\[10px\]{
-    padding: 10px;
-  }
-
   .sm\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px;
@@ -2665,10 +2639,6 @@ video {
   .sm\:py-\[20px\]{
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-
-  .sm\:pt-\[20px\]{
-    padding-top: 20px;
   }
 
   .sm\:text-left{
@@ -2691,14 +2661,14 @@ video {
     margin-right: 20px;
   }
 
-  .md\:mx-\[50px\]{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
   .md\:mx-\[30px\]{
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  .md\:mx-\[50px\]{
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .md\:mb-0{
@@ -2729,6 +2699,10 @@ video {
     margin-top: 30px;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -2755,6 +2729,10 @@ video {
 
   .md\:max-w-full{
     max-width: 100%;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -2922,6 +2900,10 @@ video {
     height: 100vh;
   }
 
+  .lmd\:w-\[25\%\]{
+    width: 25%;
+  }
+
   .lmd\:w-\[315px\]{
     width: 315px;
   }
@@ -2956,10 +2938,6 @@ video {
 
   .lmd\:w-full{
     width: 100%;
-  }
-
-  .lmd\:w-\[25\%\]{
-    width: 25%;
   }
 
   .lmd\:min-w-full{
@@ -3185,6 +3163,10 @@ video {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-\[346\.44px\]{
+    width: 346.44px;
   }
 
   .lg\:max-w-\[880px\]{
@@ -3463,6 +3445,10 @@ video {
 
   .print\:w-full{
     width: 100%;
+  }
+
+  .print\:w-\[346\.44px\]{
+    width: 346.44px;
   }
 
   .print\:min-w-full{
