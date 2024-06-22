@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>General Purpose Invoice</title>
-    <link rel="stylesheet" href="assets/css/style.css" >
- </head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
   <body class="bg-custom-bg">
     <div class="w-full leading-[1.5em]">
       <div
@@ -14,14 +14,14 @@
         <div class="relative lg:space-y-0">
           <div
             id="invoice"
-            class="mx-auto lg:p-[50px] md:px-[20px] md:py-[30px] bg-custom-white print:p-[30px] print:m-0 overflow-hidden relative"
+            class="mx-auto lg:p-[50px] md:px-[20px] md:py-[30px] bg-custom-white print:p-[30px] print:m-0 overflow-hidden relative sm:p-[30px]"
           >
-            <div class="absolute top-0 right-0 leading-[22px] w-full h-[151px]">
+            <div class="absolute top-0 left-0 leading-[22px] h-[151px]">
               <svg
                 viewBox="0 0 850 151"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="transform scale-x-[-1] scale-y-[-1] w-full h-[151px]"
+                class="transform scale-x-[-1] scale-y-[-1] h-[151px]"
                 preserveAspectRatio="xMidYMin slice"
               >
                 <path
@@ -37,7 +37,7 @@
                 viewBox="0 0 850 151"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-full h-auto"
+                class="h-auto"
               >
                 <path
                   d="M0 150.889H850V0.889408H665.496C633.762 0.889408 603.327 10.2481 580.887 26.9081L490.888 93.7224C468.447 110.381 438.014 119.74 406.279 119.74H0V150.889Z"
@@ -46,12 +46,14 @@
                 ></path>
               </svg>
             </div>
-            <div class="flex flex-row justify-between items-center mb-[65px]">
+            <div
+              class="flex flex-col justify-between items-start md:items-center mb-[65px] md:flex-row"
+            >
               <img
                 class="text-[#666] h-[60px]"
                 src="assets/images/img/logo.svg"
                 alt="logo"
-              >
+              />
               <span
                 class="uppercase text-custom-black lg:text-[50px] md:text-[50px] sm:text-[30px] font-inter lg:mt-0 md:mt-0 sm:mt-[10px]"
                 >INVOICE</span
@@ -59,17 +61,17 @@
             </div>
 
             <div
-              class="flex flex-col-reverse lmd:flex-row items-center lmd:justify-between h-[41px] print:flex-row"
+              class="flex flex-col-reverse md:flex-row items-center lmd:justify-between h-[41px] print:flex-row gap-[10px] md:gap-[30px] mt-[92px] md:mt-0"
             >
               <div class="my-auto print:mr-[20px]">
                 <img
-                  class="h-[18px]"
+                  class="w-auto"
                   src="assets/images/img/arrow_bg.svg"
                   alt="arrow_image"
-                >
+                />
               </div>
               <div
-                class="py-2.5 pl-10 flex leading-[22px] text-[14px] relative print:w-[70%]"
+                class="py-2.5 flex leading-[22px] text-[14px] relative print:w-[80%] justify-end text-end w-full lmd:w-[50%]"
               >
                 <p class="mr-[20px] leading-[22px] text-custom-gray">
                   Invoice No:
@@ -80,13 +82,13 @@
                   <b>01.07.2022</b>
                 </p>
                 <div
-                  class="absolute w-[calc(100%+100px)] h-[41px] top-0 left-0 [border-radius:20px_0_0_0] transform -skew-x-35 bg-[#007AFF1A] custom-light-blue-print"
+                  class="absolute w-[calc(100%+100px)] h-[100%] lmd:h-[41px] top-0 left-0 [border-radius:20px_0_0_0] transform -skew-x-35 bg-[#007AFF1A] custom-light-blue-print"
                 ></div>
               </div>
             </div>
 
             <div
-              class="mt-[20px] flex lg:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] mb-[15px] leading-[1.5em] md:flex-row"
+              class="mt-[20px] flex flex-col md:flex-row justify-between font-inter text-custom-black text-[14px] lg:mb-[10px] md:mb-[10px] mb-[15px] leading-[1.5em]"
             >
               <div class="">
                 <p class="mb-[2px]">
@@ -98,11 +100,11 @@
                 </p>
                 <p class="text-[#666] leading-[21px] sm:mb-[14px]">
                   Lowell H. Dominguez
-                  <br>
+                  <br />
                   84 Spilman Street, London
-                  <br>
+                  <br />
                   United Kingdom
-                  <br>lowell@gmail.com
+                  <br />lowell@gmail.com
                 </p>
               </div>
               <div class="lg:text-right md:text-right">
@@ -113,18 +115,20 @@
                 </p>
                 <p class="text-[#666] leading-[21px]">
                   Laralink Ltd
-                  <br>
+                  <br />
                   86-90 Paul Street, London
-                  <br>
+                  <br />
                   England EC2A 4NE
-                  <br>demo@gmail.com
+                  <br />demo@gmail.com
                 </p>
               </div>
             </div>
             <!-- table  -->
-            <div class="border-y-[1px] border-[#dbdfea] overflow-hidden">
-              <div class="lg:w-full leading-[21px]">
-                <table class="font-inter w-full">
+            <div
+              class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px] border-y border-[#dbdfea]"
+            >
+              <div class="lg:w-full md:w-full sm:w-[500px] sm:overflow-auto">
+                <table class="font-inter lg:w-full md:w-full sm:w-[1000px]">
                   <thead
                     class="bg-[#007AFF1A] text-[14px] custom-light-blue-print h-[42.19px]"
                   >
@@ -210,24 +214,28 @@
               class="w-full flex lg:flex-row md:flex-row sm:flex-col-reverse lg:justify-between leading-normal font-inter mb-[30px] gap-[15px]"
             >
               <!-- left side  -->
-              <div class="w-[435px] flex-none text-[14px] px-[15px] py-[10px]">
+              <div class="w-[58%] text-[14px] px-[15px] py-[10px]">
                 <p class="mb-[2px]">
                   <b class="text-custom-black font-bold">Payment info:</b>
                 </p>
                 <p class="text-[#666] text-[14px]">
-                  Credit Card - 236***********928 <br>Amount: $1732
+                  Credit Card - 236***********928 <br />Amount: $1732
                 </p>
               </div>
               <!-- right side  -->
-              <div class="text-[14px] w-[315px] text-right">
-                <table class="mt-[-1px] w-full">
+              <div
+                class="text-[14px] lmd:w-[42%] text-right w-[100%] print:w-[42%]"
+              >
+                <table class="mt-[-1px]">
                   <tbody class="">
                     <tr class="font-bold text-custom-black text-left">
-                      <td class="w-[25%] px-[15px] pb-[10px] pt-[10px]">
+                      <td
+                        class="w-full lmd:w-[25%] px-[15px] pb-[10px] pt-[10px]"
+                      >
                         Subtoal
                       </td>
                       <td
-                        class="w-[25%] text-right px-[15px] pb-[10px] pt-[10px]"
+                        class="w-full lmd:w-[25%] text-right px-[15px] pb-[10px] pt-[10px]"
                       >
                         $1650
                       </td>
@@ -274,14 +282,14 @@
           </div>
 
           <div
-            class="flex lg:flex-col lg:w-[47px] gap-[3px] lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white"
+            class="sm:mt-[20px] flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center w-[225px] mx-auto bg-white mb-[20px]"
           >
             <a
               href="javascript:window.print()"
-              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#007AFF33] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden lg:bg-[#007AFF1A]"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+                class="w-full h-[42px] text-[#007aff] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -319,15 +327,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:top-2 lg:left-[53px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Print</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="sm:hidden md:hidden lmd:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -340,10 +348,10 @@
 
             <a
               id="downloadPdfButton"
-              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
+              class="cursor-pointer transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#34C75933] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+                class="w-full h-[42px] text-[#34c759] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -362,15 +370,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:left-[53px] lg:bottom-[10px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Download</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >

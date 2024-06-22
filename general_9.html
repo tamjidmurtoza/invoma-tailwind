@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>General Purpose Invoice</title>
-    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-    <div class="bg-custom-bg w-full leading-[1.5em] font-inter lmd:pb-[30px]">
+    <div
+      class="bg-custom-bg w-full leading-[1.5em] font-inter min-h-screen lmd:h-screen overflow-auto"
+    >
       <div
-        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[20px] md:max-w-full md:mx-[15px] print:m-0"
+        class="pt-[30px] lg:max-w-[880px] lg:mx-auto mx-[10px] md:max-w-full md:mx-[15px] print:m-0"
       >
         <div class="relative leading-[22px] lmd:mx-[15px]">
           <div
-            class="bg-white p-[50px] leading-[22px] print:p-[20px] overflow-hidden relative"
+            class="bg-white sm:p-[10px] md:p-[50px] lg:p-[50px] leading-[22px] print:p-[20px] overflow-hidden relative"
             id="invoice"
           >
             <!-- graphics design  -->
@@ -33,7 +35,7 @@
             </div>
 
             <div
-              class="absolute bottom-[-15px] flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2"
+              class="absolute bottom-[-15px] flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2 sm:hidden md:flex lg:flex"
             >
               <span
                 class="h-[100px] w-[5px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
@@ -90,7 +92,7 @@
                       class="h-[64.94px] flex items-center"
                       src="assets/images/img/logo.svg"
                       alt="logo"
-                    >
+                    />
                   </div>
                 </div>
               </div>
@@ -127,11 +129,11 @@
                   </p>
                   <p class="text-[#666] leading-[21px] mb-[15px]">
                     Lowell H. Dominguez
-                    <br>
+                    <br />
                     84 Spilman Street, London
-                    <br>
+                    <br />
                     United Kingdom
-                    <br>lowell@gmail.com
+                    <br />lowell@gmail.com
                   </p>
                 </div>
                 <div class="w-[40%]">
@@ -142,19 +144,21 @@
                   </p>
                   <p class="text-[#666] leading-[21px] mb-[15px]">
                     Laralink Ltd
-                    <br>
+                    <br />
                     86-90 Paul Street, London
-                    <br>
+                    <br />
                     England EC2A 4NE
-                    <br>demo@gmail.com
+                    <br />demo@gmail.com
                   </p>
                 </div>
               </div>
               <!-- table  -->
               <div class="mb-[40px] leading-[22px]">
-                <div class="leading-[22px]">
-                  <div class="overflow-x-auto leading-[22px]">
-                    <table class="font-inter w-full">
+                <div class="overflow-hidden lg:mt-0 md:mt-0 sm:mt-[20px]">
+                  <div
+                    class="lg:w-full md:w-full sm:w-[500px] sm:overflow-x-scroll"
+                  >
+                    <table class="font-inter lg:w-full md:w-full sm:w-[700px]">
                       <thead class="text-[14px] h-[42.19px]">
                         <tr
                           class="bg-custom-blue text-[#fff] custom-blue-print"
@@ -257,15 +261,15 @@
 
                     <p class="leading-[21px] text-[#666] text-[14px]">
                       Credit Card - 236***********928
-                      <br>
+                      <br />
                       Amount: $1732
                     </p>
                   </div>
                   <!-- right side  -->
                   <div
-                    class="text-[14px] w-[42%] text-right print:w-[42%] py-[6px] relative"
+                    class="text-[14px] lg:w-[42%] text-right print:w-[42%] py-[6px] relative"
                   >
-                    <table class="w-[315px]">
+                    <table class="lg:w-[315px] w-[315px] sm:w-full">
                       <tbody class="">
                         <tr class="font-bold text-custom-black text-left">
                           <td class="w-[25%] px-[15px] pt-[10px]">Subtoal</td>
@@ -293,23 +297,24 @@
                       </tbody>
                     </table>
                     <div
-                      class="absolute top-0 left-[-40px] h-[100%] transform-[35deg] bg-[#007aff1a] w-[563.15px] transform skew-x-35 print_bg_blue"
+                      class="absolute top-0 left-[-40px] h-[100%] transform-[35deg] bg-[#007aff1a] w-[563.15px] transform skew-x-35 print_bg_blue lg:block md:hidden sm:hidden"
                     ></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- functional button -->
+          <!-- right button -->
+
           <div
-            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white mt-[20px]"
+            class="sm:mt-[20px] flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center w-[225px] mx-auto bg-white mb-[20px]"
           >
             <a
               href="javascript:window.print()"
-              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#007AFF33] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden lg:bg-[#007AFF1A]"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+                class="w-full h-[42px] text-[#007aff] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -347,15 +352,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:top-2 lg:left-[53px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Print</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -368,10 +373,10 @@
 
             <a
               id="downloadPdfButton"
-              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
+              class="cursor-pointer transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#34C75933] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+                class="w-full h-[42px] text-[#34c759] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -390,15 +395,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:left-[53px] lg:bottom-[10px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Download</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
