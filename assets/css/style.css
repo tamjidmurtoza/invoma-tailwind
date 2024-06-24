@@ -2886,6 +2886,10 @@ video {
     border-bottom-width: 0px;
   }
 
+  .md\:border-r-\[1px\]{
+    border-right-width: 1px;
+  }
+
   .md\:bg-none{
     background-image: none;
   }
