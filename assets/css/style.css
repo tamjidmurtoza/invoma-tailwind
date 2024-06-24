@@ -2969,6 +2969,11 @@ video {
     margin-right: 50px;
   }
 
+  .lmd\:mx-\[20px\]{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .lmd\:mb-0{
     margin-bottom: 0px;
   }
@@ -3195,6 +3200,10 @@ video {
 
   .lmd\:border-t-\[40px\]{
     border-top-width: 40px;
+  }
+
+  .lmd\:border-none{
+    border-style: none;
   }
 
   .lmd\:bg-\[\#007aff1a\]{
