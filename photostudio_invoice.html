@@ -16,12 +16,12 @@
       >
         <div class="relative leading-[22px] lmd:mx-[15px]">
           <div
-            class="bg-white p-[50px] leading-[22px] print:p-[20px] overflow-hidden relative"
+            class="bg-white p-[50px] leading-[22px] print:p-[20px] overflow-hidden relative mb-[20px] lmd:mb-0"
             id="invoice"
           >
             <!-- graphics design  -->
             <div
-              class="absolute top-0 flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2"
+              class="sm:hidden absolute top-0 lmd:flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2 print:flex"
             >
               <span
                 class="h-[100px] w-[5px] block mt-[-15px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
@@ -35,7 +35,7 @@
             </div>
 
             <div
-              class="absolute bottom-[-15px] flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2"
+              class="sm:hidden absolute bottom-[-15px] lmd:flex overflow-hidden left-[50%] w-[165px] justify-center -translate-x-1/2 print:flex"
             >
               <span
                 class="h-[100px] w-[5px] mx-[20px] mb-[0px] rotate-[-40deg] bg-custom-blue custom-blue-print"
@@ -49,15 +49,15 @@
             </div>
 
             <div
-              class="h-[230px] w-[250px] absolute top-0 right-0 overflow-hidden"
+              class="hidden lmd:block h-[230px] w-[250px] absolute top-0 right-0 overflow-hidden print:block"
             >
               <div
-                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[-199px] left-[67px] overflow-hidden bg-custom-blue custom-blue-print"
+                class="absolute h-[350px] w-[350px] rotate-[40deg] top-[-199px] left-[67px] overflow-hidden bg-custom-blue custom-blue-print print:block"
               ></div>
             </div>
 
             <div
-              class="h-[120px] w-[120px] border-[5px] absolute p-[20px] bottom-[-30px] right-[77px] rotate-[45deg] border-[#111]"
+              class="hidden lmd:block h-[120px] w-[120px] border-[5px] absolute p-[20px] bottom-[-30px] right-[77px] rotate-[45deg] border-[#111] print:block"
             >
               <div
                 class="h-[100%] w-[100%] border-[20px] border-custom-blue"
@@ -65,7 +65,7 @@
             </div>
 
             <div
-              class="h-[120px] w-[120px] border-[5px] absolute p-[20px] bottom-[245px] left-[-76px] rotate-[45deg] border-[#111] hidden lmd:block print:hidden"
+              class="hidden lmd:block h-[120px] w-[120px] border-[5px] absolute p-[20px] bottom-[245px] left-[-76px] rotate-[45deg] border-[#111] print:hidden"
             >
               <div
                 class="h-[100%] w-[100%] border-[6px] border-custom-blue"
@@ -73,7 +73,7 @@
             </div>
 
             <div
-              class="h-[230px] w-[250px] absolute bottom-0 left-0 overflow-hidden"
+              class="hidden lmd:block h-[230px] w-[250px] absolute bottom-0 left-0 overflow-hidden print:block"
             >
               <div
                 class="absolute h-[350px] w-[350px] rotate-[40deg] top-[135px] left-[-153px] overflow-hidden bg-custom-blue custom-blue-print"
@@ -82,14 +82,14 @@
 
             <div class="leading-[21px]">
               <div
-                class="h-[64.98px] mb-[17px] lg:flex print:flex print:mb-[12px] print:items-center print:h-[110px]"
+                class="lg:flex print:flex print:mb-[12px] print:items-center print:h-[110px]"
               >
                 <div
-                  class="w-[30%] mt-0 leading-[22px] mb-[20px] print:mb-0 h-[64.94px]"
+                  class="lmd:w-[30%] mt-0 leading-[22px] lmd:mb-[20px] print:mb-0 h-[64.94px]"
                 >
-                  <div class="mt-0 leading-[22px]">
+                  <div class="mt-0 leading-[22px] h-[60px]">
                     <img
-                      class="h-[64.94px] flex items-center"
+                      class="h-[50px] lmd:h-[64.94px] print:h-[64.94px]"
                       src="assets/images/img/logo.svg"
                       alt="logo"
                     />
@@ -98,19 +98,15 @@
               </div>
 
               <div
-                class="h-[29px] flex items-center mb-[15px] leading-[22px] mt-0"
+                class="h-[29px] lmd:flex items-center leading-[22px] mb-[20px] mt-0"
               >
-                <p
-                  class="leading-[22px] text-[#666] text-[14px] hidden lmd:block print:block mr-[20px]"
-                >
+                <p class="leading-[22px] text-[#666] text-[14px] mr-[20px]">
                   Date:
                   <b class="text-[#111] font-bold leading-[22px]">
                     01.07.2022</b
                   >
                 </p>
-                <p
-                  class="leading-[22px] text-[#666] text-[14px] hidden lmd:block print:block"
-                >
+                <p class="leading-[22px] text-[#666] text-[14px]">
                   Invoice No:
                   <b class="text-[#111] font-bold leading-[22px]"> #LL93784</b>
                 </p>
@@ -136,7 +132,7 @@
                     <br />lowell@gmail.com
                   </p>
                 </div>
-                <div class="w-[40%]">
+                <div class="lmd:w-[40%]">
                   <p class="mb-[2px]">
                     <b class="text-custom-black font-bold leading-[21px]"
                       >Pay To:</b
@@ -153,7 +149,7 @@
                 </div>
               </div>
               <!-- table  -->
-              <div class="mb-[40px] leading-[22px]">
+              <div class="lmd:mb-[40px] leading-[22px]">
                 <div class="lg:w-full leading-[21px]">
                   <div class="overflow-x-auto font-inter border-y">
                     <table
@@ -231,7 +227,7 @@
                 </div>
 
                 <div
-                  class="lmd:h-[140px] w-full mt-[30px] flex flex-col-reverse lmd:flex-row mb-[120px] print:flex-row print:h-[140px]"
+                  class="lmd:h-[140px] w-full mt-[30px] flex flex-col-reverse lmd:flex-row lmd:mb-[120px] print:flex-row print:h-[140px] print:mb-[120px]"
                 >
                   <!-- left side  -->
                   <div class="py-[30px] px-[15px] w-[58%]">
@@ -247,18 +243,22 @@
                   </div>
                   <!-- right side  -->
                   <div
-                    class="text-[14px] w-[42%] text-right print:w-[42%] py-[6px] relative"
+                    class="text-[14px] lmd:w-[42%] text-right print:w-[42%] py-[6px] relative print:mr-[20px]"
                   >
-                    <table class="w-[315px]">
+                    <table class="lmd:w-[315px] w-full">
                       <tbody class="">
-                        <tr class="font-bold text-custom-blue text-left">
-                          <td class="w-[25%] px-[15px] pt-[10px]">Subtoal</td>
+                        <tr class="font-bold text-custom-blue">
+                          <td class="w-[25%] text-left px-[15px] pt-[10px]">
+                            Subtoal
+                          </td>
                           <td class="w-[25%] text-right px-[15px] pt-[10px]">
                             $1650
                           </td>
                         </tr>
                         <tr class="text-custom-blue text-left border-b-[1px]">
-                          <td class="w-[25%] px-[15px] pb-[10px] pt-[10px]">
+                          <td
+                            class="w-[25%] text-left px-[15px] pb-[10px] pt-[10px]"
+                          >
                             Tax <span class=""> (5%) </span>
                           </td>
                           <td
@@ -272,12 +272,14 @@
                           <td class="w-[25%] text-left px-[15px] py-[18px]">
                             Grand Total
                           </td>
-                          <td class="w-[25%] px-[15px] py-[18px]">$1732</td>
+                          <td class="w-[25%] text-right px-[15px] py-[18px]">
+                            $1732
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                     <div
-                      class="absolute top-0 left-[-40px] h-[100%] transform-[35deg] lmd:bg-[#007aff1a] w-[563.15px] transform skew-x-35 print_bg_blue"
+                      class="absolute top-0 left-[-40px] h-[100%] transform-[35deg] lmd:bg-[#007aff1a] w-[563.15px] transform skew-x-35 custom-light-blue-print"
                     ></div>
                   </div>
                 </div>
@@ -285,15 +287,16 @@
             </div>
           </div>
           <!-- functional button -->
+
           <div
-            class="flex lg:flex-col lg:w-[49px] gap-[3px] lg:justify-end lg:items-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center md:w-[229px] mx-auto bg-white mt-[20px]"
+            class="flex lg:flex-col lg:w-[49px] lg:gap-[3px] lg:justify-end lg:mt-0 lg:absolute lg:translate-x-[100%] lg:-right-[20px] lg:top-0 border-[3px] border-white rounded-md print:hidden md:mb-[20px] md:justify-center w-[225px] mx-auto bg-white mb-[20px] sm:w-[225px]"
           >
             <a
               href="javascript:window.print()"
-              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] md:rounded-[6px] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#007AFF33]"
+              class="transition-colors duration-200 focus:outline-none text-gray-200 hover:text-blue-400 group bg-[#007AFF1A] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#007AFF33] lg:rounded-t-[6px] lg:rounded-b-none lg:overflow-hidden lg:bg-[#007AFF1A]"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#007aff] flex justify-center items-center"
+                class="w-full h-[42px] text-[#007aff] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -331,15 +334,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] top-2 shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:top-2 lg:left-[53px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Print</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -352,10 +355,10 @@
 
             <a
               id="downloadPdfButton"
-              class="transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] md:rounded-[6px] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden md:flex md:justify-center md:items-center hover:bg-[#34C75933] cursor-pointer"
+              class="cursor-pointer transition-colors duration-200 focus:outline-none text-white hover:text-blue-400 group bg-[#34c7591a] rounded-[6px] overflow-hidden flex justify-center items-center hover:bg-[#34C75933] lg:rounded-b-[6px] lg:rounded-t-none lg:overflow-hidden"
             >
               <span
-                class="lg:w-[42px] lg:px-0 md:pl-[15px] w-full h-[42px] text-[#34c759] flex justify-center items-center"
+                class="w-full h-[42px] text-[#34c759] flex justify-center items-center lg:w-[42px] lg:px-0 pl-[15px]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -374,15 +377,15 @@
               </span>
 
               <p
-                class="lg:absolute h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] left-[53px] bottom-[10px] shadow-gray-200 lg:bg-gray-800 text-white lg:opacity-0 lg:invisible lg:transition-opacity duration-200 lg:group-hover:opacity-100 group-hover:visible md:bg-none"
+                class="h-[25px] flex items-center justify-center py-[5px] px-[10px] rounded-[4px] shadow-gray-200 text-white opacity-100 visible transition-opacity duration-200 lg:absolute lg:left-[53px] lg:bottom-[10px] lg:bg-gray-800 lg:text-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible"
               >
                 <span
-                  class="truncate font-inter text-[14px] lg:text-white lg:font-normal md:font-semibold md:text-[#007aff]"
+                  class="truncate font-inter text-[14px] font-semibold text-[#007aff] lg:text-white lg:font-normal"
                   >Download</span
                 >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="md:hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
+                  class="hidden lg:block absolute w-[17px] h-[10px] transform rotate-45 -translate-y-1/2 fill-current -left-2 top-1/2 text-gray-800"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
