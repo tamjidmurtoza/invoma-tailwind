@@ -728,6 +728,14 @@ video {
   margin: 0px;
 }
 
+.m-\[-1px\]{
+  margin: -1px;
+}
+
+.m-\[-2px\]{
+  margin: -2px;
+}
+
 .mx-\[-50px\]{
   margin-left: -50px;
   margin-right: -50px;
@@ -761,6 +769,11 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-\[15px\]{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .mb-0{
@@ -1645,6 +1658,23 @@ video {
   margin-bottom: calc(10px * var(--tw-space-y-reverse));
 }
 
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-x > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
+.divide-\[\#dbdfea\] > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(219 223 234 / var(--tw-divide-opacity));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1981,6 +2011,10 @@ video {
 
 .p-\[50px\]{
   padding: 50px;
+}
+
+.p-\[-1px\]{
+  padding: -1px;
 }
 
 .px-20{
@@ -3069,6 +3103,10 @@ video {
     height: 100vh;
   }
 
+  .lmd\:h-\[109px\]{
+    height: 109px;
+  }
+
   .lmd\:w-\[25\%\]{
     width: 25%;
   }
@@ -3115,6 +3153,10 @@ video {
 
   .lmd\:w-full{
     width: 100%;
+  }
+
+  .lmd\:w-\[450px\]{
+    width: 450px;
   }
 
   .lmd\:min-w-full{
@@ -3183,6 +3225,18 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lmd\:divide-x > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
+  .lmd\:divide-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
   }
 
   .lmd\:border-r{
@@ -3691,6 +3745,10 @@ video {
 
   .print\:w-full{
     width: 100%;
+  }
+
+  .print\:w-\[450px\]{
+    width: 450px;
   }
 
   .print\:min-w-full{
