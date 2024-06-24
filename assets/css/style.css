@@ -2696,6 +2696,10 @@ video {
     padding: 30px;
   }
 
+  .sm\:p-\[15px\]{
+    padding: 15px;
+  }
+
   .sm\:px-\[10px\]{
     padding-left: 10px;
     padding-right: 10px;
